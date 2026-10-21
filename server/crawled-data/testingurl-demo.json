@@ -1,0 +1,895 @@
+{
+  "websiteId": "testingurl-demo",
+  "startingUrl": "https://testingurl.dev/scraping/ecommerce/category/laptops",
+  "crawledAt": "2026-10-16T09:13:54.769Z",
+  "pagesFound": 10,
+  "pages": [
+    {
+      "url": "https://testingurl.dev/scraping/ecommerce/category/laptops",
+      "title": "Laptops · TestingURL.dev",
+      "text": "TestingURL.dev BY All pages Web Scraping HTTP & Networking Mock Data Generators AI & LLM Testing « Ecommerce catalog Laptops 15 products in this category. Vertex Air Laptop 107 $86.00 · ★★☆☆☆ Ember Max Laptop 117 $136.00 · ★★★★★ Vertex Lite Laptop 127 $186.00 · ★★★☆☆ Ember Pro Laptop 137 $236.00 · ★☆☆☆☆ Vertex Studio Laptop 147 $286.00 · ★★★★☆ Ember Air Laptop 157 $336.00 · ★★☆☆☆ Vertex Max Laptop 167 $386.00 · ★★★★★ Ember Lite Laptop 177 $436.00 · ★★★☆☆ Vertex Pro Laptop 187 $486.00 · ★☆☆☆☆ Ember Studio Laptop 197 $536.00 · ★★★★☆ Vertex Air Laptop 207 $586.00 · ★★☆☆☆ Ember Max Laptop 217 $636.00 · ★★★★★ Vertex Lite Laptop 227 $686.00 · ★★★☆☆ Ember Pro Laptop 237 $736.00 · ★☆☆☆☆ Vertex Studio Laptop 247 $786.00 · ★★★★☆ TestingURL.dev A sandbox for scraping and HTTP-tooling. All test pages Geekflare © 2026 Geekflare · Built with in London by Geekflare",
+      "products": [
+        {
+          "name": "Vertex Air Laptop 107",
+          "description": "",
+          "price": 86,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/1",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Ember Max Laptop 117",
+          "description": "",
+          "price": 136,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/2",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Vertex Lite Laptop 127",
+          "description": "",
+          "price": 186,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/3",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Ember Pro Laptop 137",
+          "description": "",
+          "price": 236,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/4",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Vertex Studio Laptop 147",
+          "description": "",
+          "price": 286,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/5",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Ember Air Laptop 157",
+          "description": "",
+          "price": 336,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/6",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Vertex Max Laptop 167",
+          "description": "",
+          "price": 386,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/7",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Ember Lite Laptop 177",
+          "description": "",
+          "price": 436,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/8",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Vertex Pro Laptop 187",
+          "description": "",
+          "price": 486,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/9",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Ember Studio Laptop 197",
+          "description": "",
+          "price": 536,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/10",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Vertex Air Laptop 207",
+          "description": "",
+          "price": 586,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/11",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Ember Max Laptop 217",
+          "description": "",
+          "price": 636,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/12",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Vertex Lite Laptop 227",
+          "description": "",
+          "price": 686,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/13",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Ember Pro Laptop 237",
+          "description": "",
+          "price": 736,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/14",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Vertex Studio Laptop 247",
+          "description": "",
+          "price": 786,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/15",
+          "availability": null,
+          "source": "product-card"
+        }
+      ],
+      "metadata": [
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        {
+          "name": "description",
+          "content": "Browse laptops in the fake ecommerce catalog. Every product links to its own detail page."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "TestingURL.dev"
+        },
+        {
+          "name": "og:title",
+          "content": "Laptops · TestingURL.dev"
+        },
+        {
+          "name": "og:description",
+          "content": "Browse laptops in the fake ecommerce catalog. Every product links to its own detail page."
+        },
+        {
+          "name": "og:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:image:width",
+          "content": "1200"
+        },
+        {
+          "name": "og:image:height",
+          "content": "630"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Laptops · TestingURL.dev"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Browse laptops in the fake ecommerce catalog. Every product links to its own detail page."
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:url",
+          "content": "https://testingurl.dev/scraping/ecommerce/category/laptops"
+        }
+      ]
+    },
+    {
+      "url": "https://testingurl.dev/",
+      "title": "Web Scraping Test Site · TestingURL.dev",
+      "text": "TestingURL.dev BY All pages Web Scraping HTTP & Networking Mock Data Generators AI & LLM Testing Developer & Web Scraping Sandbox TestingURL.dev is a free web scraping test site and developer sandbox. Practice pages for crawlers and HTTP clients, from an ecommerce catalog to pagination, forms, and login walls. Go ahead and scrape this site. Every page below has a known structure, robots.txt allows every path, and there's no rate limiting except on the one page built to demonstrate it. Nothing here is randomized between requests unless the page description says so. SECTION 01 Web Scraping A web scraping test site with known, predictable markup. Practice pages for crawlers, scrapers, and browser automation, from a full ecommerce catalog to pagination, forms, and login walls. Ecommerce catalog A fake ecommerce store to scrape: category listings down to individual product detail pages, the classic web-scraping example. EASY Store home — Browse every product category in the fake store. EASY Category listing — Products within one category, each linking to its own detail page. EASY Product detail page — A realistic ecommerce scraping target, with price, rating, stock, and related items. Structured data & metadata Machine-readable product, collection, and business data in the formats real sites use: JSON-LD, Microdata, Open Graph, and JS dataLayers. EASY Format overview — The same demo product in every format below, for comparing extraction results. EASY Product — JSON-LD — Product data exposed only via a schema.org/Product JSON-LD script. EASY Product — Microdata — Same product, marked up with schema.org Microdata (itemscope/itemprop) instead of JSON-LD. EASY Product — Open Graph — Same product, exposed only via Open Graph / product: meta tags in <head>. MEDIUM Product — dataLayer — Same product pushed into window.dataLayer as a GA4/GTM ecommerce event. No markup, so JS execution is required. MEDIUM Product — combined — JSON-LD, Microdata, Open Graph, and dataLayer all present at once (a realistic messy page). EASY Collection (ItemList) — A category page exposed as a schema.org CollectionPage/ItemList. EASY Product reviews — A product with visible reviews plus Review/AggregateRating JSON-LD. EASY FAQ page — Common questions marked up as a schema.org FAQPage. EASY Contact page — Email, phone, and address as plain text, mailto:/tel: links, Microdata, and Organization JSON-LD. Pagination Different pagination patterns for practicing crawling multi-page listings. EASY Numbered pagination — Classic ?page=N style listing, 10 items per page, with rel=\"next\"/\"prev\" link tags in <head>. EASY Offset/limit pagination — Query-param offset/limit pagination. MEDIUM Load more button — Fetches additional items via a JSON API on button click. MEDIUM Infinite scroll — Loads more items automatically as you scroll. Rendering modes Content delivered differently: server-rendered vs. client-rendered. HARD JS-rendered content — Empty shell on load; content is injected via a client-side fetch. Requires a JS-capable scraper. HARD Frames & iFrames — Content nested inside an iframe pointing at a separate URL, two levels deep. Find the real page and fetch it directly. Tables Tabular data in a few different shapes. EASY Simple table — A single flat product table. MEDIUM Sortable table — Client-navigable sortable columns via ?sort=&dir= query params. HARD Nested/merged cells — Table grouped by category using rowspan. Forms Forms with varying complexity and hidden fields. EASY Basic GET form — Simple search form, submits via GET. EASY POST form — Form submission via POST with a confirmation page. HARD Multi-step form — Three-step wizard using a session cookie to persist state. MEDIUM File upload — Upload form with a file input. HARD Hidden & honeypot fields — Form with a CSRF token and a bot-trap honeypot field that must stay empty. Authentication Cookie/session-based login wall. MEDIUM Login page — Sets a session cookie on successful login (user: demo / pass: demo). MEDIUM Protected dashboard — Redirects to /login unless a valid session cookie is present. EASY Logout — Clears the session cookie. Dynamic elements Elements that change between requests or after a delay, useful for checking selector robustness and explicit-wait logic. MEDIUM Dynamic elements — A randomized id on every request, plus buttons that only become enabled or change color after a delay. Accessibility The same page with and without intentional accessibility issues, documented on-page. Built for automated a11y scanners like axe-core, pa11y, or Lighthouse. MEDIUM Inaccessible version — Four documented, scanner-detectable issues: missing alt text, an unlabeled input, low contrast, and a skipped heading level. EASY Accessible version — The same content with every issue above fixed, for comparison. Link graphs Crawling practice: pages for testing crawlers and link-following logic, including redirect chains, loops, and intentional dead ends. MEDIUM Redirect chain — Follows N sequential redirects before landing. Try /redirect-chain/{n}. MEDIUM Circular links — Three pages that link back to each other in a loop. EASY Broken links — A page mixing valid links with intentional 404s. Markup difficulty levels The same product data rendered with progressively messier HTML. EASY Clean semantic HTML — Well-structured HTML with meaningful classes. MEDIUM Div soup — Same content, all divs/spans, no semantic tags or classes. HARD Obfuscated classes — Same content, hashed/randomized-looking class names. MEDIUM Data-attribute hooks — Same content, data extracted via data-* attributes rather than classes. URL structure & normalization The mechanics behind duplicate-content URLs: trailing slashes, case sensitivity, query parameter order, tracking params, and the <base> tag. EASY Overview — Links to every URL-structure scenario below. EASY Trailing slash — The same content at two URLs, one with a trailing slash, one canonical to the other. MEDIUM Case sensitivity — Paths are case-sensitive here; the lowercase variant of this URL is a genuine 404. MEDIUM Query parameter order & tracking params — A canonical tag computed from the request, sorting params and stripping known tracking params. MEDIUM Encoded characters — Shows the raw vs. decoded query string: %20, +, and a literal space. HARD The <base> tag — A <base href> one directory above the page's own URL, so a relative link resolves somewhere unexpected. Canonical tags & meta robots directives Canonical tag scenarios (self, duplicate, conflicting, cross-domain) and page-level robots directives via both a meta tag and the X-Robots-Tag header. EASY Overview — Links to every canonical and meta robots scenario below. EASY Canonical: self-referencing — The recommended default: a page canonical to itself. MEDIUM Canonical: duplicate content, page A — The preferred URL in a duplicate-content pair. MEDIUM Canonical: duplicate content, page B — A different URL with the same content, canonical to page A. HARD Canonical: tag vs. header conflict — The <link> tag names one URL, the HTTP Link header names another. MEDIUM Canonical: cross-domain — Canonical points at a URL on a different domain, the syndicated-content pattern. EASY Meta robots: noindex, follow — Keep this page out of the index, but still crawl its links. EASY Meta robots: index, nofollow — Index this page, but don't follow its outbound links. MEDIUM X-Robots-Tag header — The same noindex directive as an HTTP header instead of a meta tag, the only option for non-HTML resources. EASY Meta robots: noarchive, nosnippet — Index this page, but don't cache a visible copy or show a snippet. hreflang Three language variants of the same page with reciprocal hreflang tags to each other, themselves, and an x-default. EASY Overview — Links to all three language variants. MEDIUM English variant — hreflang=\"en\", linking to the Spanish and French variants plus x-default. Redirect mechanisms Redirects that don't use a real HTTP 3xx status code, plus a genuine infinite redirect loop for testing loop-detection logic. EASY Overview — Links to every redirect-mechanism scenario below. MEDIUM Meta refresh — A <meta http-equiv=\"refresh\"> tag; the server response itself is a plain 200. HARD JavaScript redirect — window.location set from a script, invisible to a scraper that skips JS execution. HARD Infinite redirect loop — Two real HTTP 302s that point at each other forever, on purpose. SECTION 02 HTTP & Networking Endpoints for testing HTTP clients, status codes, and headers directly. Status & redirects Control the exact status code and redirect behavior of a response. EASY Status code echo — Returns the requested HTTP status code. Try /http/status/{code}. EASY Redirect chain — Issues N sequential 302 redirects. Try /http/redirect/{n}. EASY Redirect to URL — Redirects to any http(s) URL you supply via ?url=, with an optional ?status_code=. EASY Delayed response — Delays the response by N seconds (max 10). Try /http/delay/{seconds}. Headers & cookies Inspect what your client is sending, or set state for it to send back. EASY Header echo — Returns the request headers as JSON. EASY Request echo — Accepts any method and echoes back the method, headers, query, and body. Try POSTing JSON to it. EASY Set response headers — Every query param becomes a real response header, and is echoed in the JSON body. MEDIUM User-Agent check — Tests header-spoofing logic: returns 403 unless your User-Agent looks like a real browser. EASY Your IP — Returns the connecting client IP as seen by the edge. EASY Set cookie — Sets a cookie from query params, then redirects to /cookies/get. EASY Get cookies — Returns current cookies as JSON. Authentication Protected endpoints covering common HTTP-level auth schemes. EASY Basic auth — Protected by HTTP Basic Auth (user: demo / pass: demo). EASY Bearer token auth — Requires an Authorization: Bearer demo-token header. Compression & rate limits Response encoding and throttling behavior. MEDIUM Gzip response — A padded JSON body, transparently gzip-compressed by the edge when the client sends Accept-Encoding. MEDIUM Rate limiting — Returns 429 after 5 requests within 60 seconds from the same client. Caching & conditional requests Round-trip endpoints that exercise conditional GET (If-Modified-Since / If-None-Match) handling. MEDIUM Conditional GET — Returns Last-Modified/ETag headers; send either back to get a 304 with no body. MEDIUM ETag round-trip — Send the same value back via If-None-Match to get a 304. Try /http/etag/{value}. Streaming & content negotiation Chunked responses, byte-range requests, and Accept-driven content negotiation. MEDIUM Streamed NDJSON — Streams N newline-delimited JSON lines via a real ReadableStream. Try /http/stream/{n} (max 100). MEDIUM Byte-range requests — Supports Range: bytes=start-end with real 206/416 responses, for resumable-download testing. MEDIUM Image content negotiation — Returns a real SVG or PNG depending on the Accept header. SECTION 03 Mock Data A small fake REST API for mocking data in your own apps. Responses are deterministic, JSONPlaceholder-style, and nothing is persisted. Users API A fake CRUD API for user records, supporting list, fetch, create, update, and delete (nothing is persisted). EASY Users API reference — Every endpoint documented: list, get, create, update, delete, plus a generated avatar per user. Posts & Comments API Blog-style posts and their nested comments, backed by a fake CRUD API. EASY Posts & Comments API reference — Endpoint reference covering nested /posts/:id/comments and ?userId=/?postId= filtering. Albums & Photos API Albums and their nested photos, each with a real self-hosted image, served through a fake CRUD API. EASY Albums & Photos API reference — Covers nested /albums/:id/photos, plus generated per-photo images. Todos API To-do items with a deterministic completed/incomplete split, exposed through a fake CRUD API. EASY Todos API reference — Documents every endpoint, including ?userId= and ?completed= filtering. SECTION 04 Generators Instant, no-signup generators for bulk test data. Output is fresh every time, unlike the deterministic Mock Data fixtures above. User Generator Bulk fake identities (name, email, phone, address, avatar), fresh every time. EASY Generate users — Interactive generator with instant JSON/CSV download. No signup or email required. Card Generator Synthetic, Luhn-valid test credit card numbers for exercising payment-form validation. EASY Generate test cards — Visa, Mastercard, Amex, and Discover-shaped numbers. Not real, not linked to any account, and cannot be charged. File Generator Dummy files of a given type and size, for checking upload validation. EASY Generate a dummy file — txt, csv, json, or random bytes, at any size up to 5MB. Image Generator A placeholder image at any dimensions you request. EASY Placeholder image — Deterministic per dimension, unlike the other generators here. Try /generator/images/{width}/{height}. SECTION 05 AI & LLM Testing Test fixtures for people building AI agents, LLM-feeding scrapers, and RAG pipelines. Includes prompt-injection isolation testing, a RAG testing dataset with a documented answer key, and RAG testing PDFs and documents built to stress-test extraction. Prompt injection A page with safe, labeled example injection patterns and a benign canary phrase, so you can check that page content stays isolated from an agent's instructions. MEDIUM Prompt injection test page — Seven hidden-text vectors (HTML comments, display:none, off-screen, color-matched, zero-font, alt text, meta description), each with a unique canary. RAG & retrieval corpus A small RAG testing dataset: fifteen short, topically distinct articles paired with a documented answer key, enough to test chunking, embedding, and retrieval end to end and check whether the right result comes back. EASY Corpus & answer key — Every article in the dataset, plus sample queries mapped to the correct expected result. EASY Example article — Available as HTML, plain Markdown, or PDF, and in bulk as JSON at /ai/corpus/articles.json. EASY Full dataset bundle — The whole RAG testing dataset in one download: every article, every format URL, and the answer key in a single JSON file. PDF documents RAG testing PDFs for exercising PDF-to-text extraction, from simple single-column articles up to layouts built specifically to trip up naive parsers. EASY PDF documents — Every RAG testing PDF on the site in one place, including a plain PDF version of each corpus article. MEDIUM Table extraction test — A drawn table (an order log) that tests whether extraction keeps each row's cells together instead of reading columns out of order. HARD Two-column layout test — Two unrelated essays placed side by side to test whether extraction respects column boundaries instead of reading straight across the page. HARD Running header/footer test — A multi-page document with repeated header and footer boilerplate on every page, testing whether extraction strips it out. TestingURL.dev A sandbox for scraping and HTTP-tooling. All test pages Geekflare © 2026 Geekflare · Built with in London by Geekflare",
+      "products": [],
+      "metadata": [
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        {
+          "name": "description",
+          "content": "TestingURL.dev is a free web scraping test site and developer sandbox. Practice pages for crawlers and HTTP clients, from an ecommerce catalog to pagination, forms, and login walls."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "TestingURL.dev"
+        },
+        {
+          "name": "og:title",
+          "content": "Web Scraping Test Site · TestingURL.dev"
+        },
+        {
+          "name": "og:description",
+          "content": "TestingURL.dev is a free web scraping test site and developer sandbox. Practice pages for crawlers and HTTP clients, from an ecommerce catalog to pagination, forms, and login walls."
+        },
+        {
+          "name": "og:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:image:width",
+          "content": "1200"
+        },
+        {
+          "name": "og:image:height",
+          "content": "630"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Web Scraping Test Site · TestingURL.dev"
+        },
+        {
+          "name": "twitter:description",
+          "content": "TestingURL.dev is a free web scraping test site and developer sandbox. Practice pages for crawlers and HTTP clients, from an ecommerce catalog to pagination, forms, and login walls."
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:url",
+          "content": "https://testingurl.dev/"
+        }
+      ]
+    },
+    {
+      "url": "https://testingurl.dev/scraping",
+      "title": "Web Scraping · TestingURL.dev",
+      "text": "TestingURL.dev BY All pages Web Scraping HTTP & Networking Mock Data Generators AI & LLM Testing « All test pages Web Scraping A web scraping test site with known, predictable markup. Practice pages for crawlers, scrapers, and browser automation, from a full ecommerce catalog to pagination, forms, and login walls. Ecommerce catalog A fake ecommerce store to scrape: category listings down to individual product detail pages, the classic web-scraping example. EASY Store home — Browse every product category in the fake store. EASY Category listing — Products within one category, each linking to its own detail page. EASY Product detail page — A realistic ecommerce scraping target, with price, rating, stock, and related items. Structured data & metadata Machine-readable product, collection, and business data in the formats real sites use: JSON-LD, Microdata, Open Graph, and JS dataLayers. EASY Format overview — The same demo product in every format below, for comparing extraction results. EASY Product — JSON-LD — Product data exposed only via a schema.org/Product JSON-LD script. EASY Product — Microdata — Same product, marked up with schema.org Microdata (itemscope/itemprop) instead of JSON-LD. EASY Product — Open Graph — Same product, exposed only via Open Graph / product: meta tags in <head>. MEDIUM Product — dataLayer — Same product pushed into window.dataLayer as a GA4/GTM ecommerce event. No markup, so JS execution is required. MEDIUM Product — combined — JSON-LD, Microdata, Open Graph, and dataLayer all present at once (a realistic messy page). EASY Collection (ItemList) — A category page exposed as a schema.org CollectionPage/ItemList. EASY Product reviews — A product with visible reviews plus Review/AggregateRating JSON-LD. EASY FAQ page — Common questions marked up as a schema.org FAQPage. EASY Contact page — Email, phone, and address as plain text, mailto:/tel: links, Microdata, and Organization JSON-LD. Pagination Different pagination patterns for practicing crawling multi-page listings. EASY Numbered pagination — Classic ?page=N style listing, 10 items per page, with rel=\"next\"/\"prev\" link tags in <head>. EASY Offset/limit pagination — Query-param offset/limit pagination. MEDIUM Load more button — Fetches additional items via a JSON API on button click. MEDIUM Infinite scroll — Loads more items automatically as you scroll. Rendering modes Content delivered differently: server-rendered vs. client-rendered. HARD JS-rendered content — Empty shell on load; content is injected via a client-side fetch. Requires a JS-capable scraper. HARD Frames & iFrames — Content nested inside an iframe pointing at a separate URL, two levels deep. Find the real page and fetch it directly. Tables Tabular data in a few different shapes. EASY Simple table — A single flat product table. MEDIUM Sortable table — Client-navigable sortable columns via ?sort=&dir= query params. HARD Nested/merged cells — Table grouped by category using rowspan. Forms Forms with varying complexity and hidden fields. EASY Basic GET form — Simple search form, submits via GET. EASY POST form — Form submission via POST with a confirmation page. HARD Multi-step form — Three-step wizard using a session cookie to persist state. MEDIUM File upload — Upload form with a file input. HARD Hidden & honeypot fields — Form with a CSRF token and a bot-trap honeypot field that must stay empty. Authentication Cookie/session-based login wall. MEDIUM Login page — Sets a session cookie on successful login (user: demo / pass: demo). MEDIUM Protected dashboard — Redirects to /login unless a valid session cookie is present. EASY Logout — Clears the session cookie. Dynamic elements Elements that change between requests or after a delay, useful for checking selector robustness and explicit-wait logic. MEDIUM Dynamic elements — A randomized id on every request, plus buttons that only become enabled or change color after a delay. Accessibility The same page with and without intentional accessibility issues, documented on-page. Built for automated a11y scanners like axe-core, pa11y, or Lighthouse. MEDIUM Inaccessible version — Four documented, scanner-detectable issues: missing alt text, an unlabeled input, low contrast, and a skipped heading level. EASY Accessible version — The same content with every issue above fixed, for comparison. Link graphs Crawling practice: pages for testing crawlers and link-following logic, including redirect chains, loops, and intentional dead ends. MEDIUM Redirect chain — Follows N sequential redirects before landing. Try /redirect-chain/{n}. MEDIUM Circular links — Three pages that link back to each other in a loop. EASY Broken links — A page mixing valid links with intentional 404s. Markup difficulty levels The same product data rendered with progressively messier HTML. EASY Clean semantic HTML — Well-structured HTML with meaningful classes. MEDIUM Div soup — Same content, all divs/spans, no semantic tags or classes. HARD Obfuscated classes — Same content, hashed/randomized-looking class names. MEDIUM Data-attribute hooks — Same content, data extracted via data-* attributes rather than classes. URL structure & normalization The mechanics behind duplicate-content URLs: trailing slashes, case sensitivity, query parameter order, tracking params, and the <base> tag. EASY Overview — Links to every URL-structure scenario below. EASY Trailing slash — The same content at two URLs, one with a trailing slash, one canonical to the other. MEDIUM Case sensitivity — Paths are case-sensitive here; the lowercase variant of this URL is a genuine 404. MEDIUM Query parameter order & tracking params — A canonical tag computed from the request, sorting params and stripping known tracking params. MEDIUM Encoded characters — Shows the raw vs. decoded query string: %20, +, and a literal space. HARD The <base> tag — A <base href> one directory above the page's own URL, so a relative link resolves somewhere unexpected. Canonical tags & meta robots directives Canonical tag scenarios (self, duplicate, conflicting, cross-domain) and page-level robots directives via both a meta tag and the X-Robots-Tag header. EASY Overview — Links to every canonical and meta robots scenario below. EASY Canonical: self-referencing — The recommended default: a page canonical to itself. MEDIUM Canonical: duplicate content, page A — The preferred URL in a duplicate-content pair. MEDIUM Canonical: duplicate content, page B — A different URL with the same content, canonical to page A. HARD Canonical: tag vs. header conflict — The <link> tag names one URL, the HTTP Link header names another. MEDIUM Canonical: cross-domain — Canonical points at a URL on a different domain, the syndicated-content pattern. EASY Meta robots: noindex, follow — Keep this page out of the index, but still crawl its links. EASY Meta robots: index, nofollow — Index this page, but don't follow its outbound links. MEDIUM X-Robots-Tag header — The same noindex directive as an HTTP header instead of a meta tag, the only option for non-HTML resources. EASY Meta robots: noarchive, nosnippet — Index this page, but don't cache a visible copy or show a snippet. hreflang Three language variants of the same page with reciprocal hreflang tags to each other, themselves, and an x-default. EASY Overview — Links to all three language variants. MEDIUM English variant — hreflang=\"en\", linking to the Spanish and French variants plus x-default. Redirect mechanisms Redirects that don't use a real HTTP 3xx status code, plus a genuine infinite redirect loop for testing loop-detection logic. EASY Overview — Links to every redirect-mechanism scenario below. MEDIUM Meta refresh — A <meta http-equiv=\"refresh\"> tag; the server response itself is a plain 200. HARD JavaScript redirect — window.location set from a script, invisible to a scraper that skips JS execution. HARD Infinite redirect loop — Two real HTTP 302s that point at each other forever, on purpose. TestingURL.dev A sandbox for scraping and HTTP-tooling. All test pages Geekflare © 2026 Geekflare · Built with in London by Geekflare",
+      "products": [],
+      "metadata": [
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        {
+          "name": "description",
+          "content": "A web scraping test site with known, predictable markup. Practice pages for crawlers, scrapers, and browser automation, from a full ecommerce catalog to pagination, forms, and login walls."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "TestingURL.dev"
+        },
+        {
+          "name": "og:title",
+          "content": "Web Scraping · TestingURL.dev"
+        },
+        {
+          "name": "og:description",
+          "content": "A web scraping test site with known, predictable markup. Practice pages for crawlers, scrapers, and browser automation, from a full ecommerce catalog to pagination, forms, and login walls."
+        },
+        {
+          "name": "og:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:image:width",
+          "content": "1200"
+        },
+        {
+          "name": "og:image:height",
+          "content": "630"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Web Scraping · TestingURL.dev"
+        },
+        {
+          "name": "twitter:description",
+          "content": "A web scraping test site with known, predictable markup. Practice pages for crawlers, scrapers, and browser automation, from a full ecommerce catalog to pagination, forms, and login walls."
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:url",
+          "content": "https://testingurl.dev/scraping"
+        }
+      ]
+    },
+    {
+      "url": "https://testingurl.dev/http",
+      "title": "HTTP & Networking · TestingURL.dev",
+      "text": "TestingURL.dev BY All pages Web Scraping HTTP & Networking Mock Data Generators AI & LLM Testing « All test pages HTTP & Networking Endpoints for testing HTTP clients, status codes, and headers directly. Status & redirects Control the exact status code and redirect behavior of a response. EASY Status code echo — Returns the requested HTTP status code. Try /http/status/{code}. EASY Redirect chain — Issues N sequential 302 redirects. Try /http/redirect/{n}. EASY Redirect to URL — Redirects to any http(s) URL you supply via ?url=, with an optional ?status_code=. EASY Delayed response — Delays the response by N seconds (max 10). Try /http/delay/{seconds}. Headers & cookies Inspect what your client is sending, or set state for it to send back. EASY Header echo — Returns the request headers as JSON. EASY Request echo — Accepts any method and echoes back the method, headers, query, and body. Try POSTing JSON to it. EASY Set response headers — Every query param becomes a real response header, and is echoed in the JSON body. MEDIUM User-Agent check — Tests header-spoofing logic: returns 403 unless your User-Agent looks like a real browser. EASY Your IP — Returns the connecting client IP as seen by the edge. EASY Set cookie — Sets a cookie from query params, then redirects to /cookies/get. EASY Get cookies — Returns current cookies as JSON. Authentication Protected endpoints covering common HTTP-level auth schemes. EASY Basic auth — Protected by HTTP Basic Auth (user: demo / pass: demo). EASY Bearer token auth — Requires an Authorization: Bearer demo-token header. Compression & rate limits Response encoding and throttling behavior. MEDIUM Gzip response — A padded JSON body, transparently gzip-compressed by the edge when the client sends Accept-Encoding. MEDIUM Rate limiting — Returns 429 after 5 requests within 60 seconds from the same client. Caching & conditional requests Round-trip endpoints that exercise conditional GET (If-Modified-Since / If-None-Match) handling. MEDIUM Conditional GET — Returns Last-Modified/ETag headers; send either back to get a 304 with no body. MEDIUM ETag round-trip — Send the same value back via If-None-Match to get a 304. Try /http/etag/{value}. Streaming & content negotiation Chunked responses, byte-range requests, and Accept-driven content negotiation. MEDIUM Streamed NDJSON — Streams N newline-delimited JSON lines via a real ReadableStream. Try /http/stream/{n} (max 100). MEDIUM Byte-range requests — Supports Range: bytes=start-end with real 206/416 responses, for resumable-download testing. MEDIUM Image content negotiation — Returns a real SVG or PNG depending on the Accept header. TestingURL.dev A sandbox for scraping and HTTP-tooling. All test pages Geekflare © 2026 Geekflare · Built with in London by Geekflare",
+      "products": [],
+      "metadata": [
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        {
+          "name": "description",
+          "content": "Endpoints for testing HTTP clients, status codes, and headers directly."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "TestingURL.dev"
+        },
+        {
+          "name": "og:title",
+          "content": "HTTP & Networking · TestingURL.dev"
+        },
+        {
+          "name": "og:description",
+          "content": "Endpoints for testing HTTP clients, status codes, and headers directly."
+        },
+        {
+          "name": "og:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:image:width",
+          "content": "1200"
+        },
+        {
+          "name": "og:image:height",
+          "content": "630"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "HTTP & Networking · TestingURL.dev"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Endpoints for testing HTTP clients, status codes, and headers directly."
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:url",
+          "content": "https://testingurl.dev/http"
+        }
+      ]
+    },
+    {
+      "url": "https://testingurl.dev/mock-data",
+      "title": "Mock Data · TestingURL.dev",
+      "text": "TestingURL.dev BY All pages Web Scraping HTTP & Networking Mock Data Generators AI & LLM Testing « All test pages Mock Data A small fake REST API for mocking data in your own apps. Responses are deterministic, JSONPlaceholder-style, and nothing is persisted. Users API A fake CRUD API for user records, supporting list, fetch, create, update, and delete (nothing is persisted). EASY Users API reference — Every endpoint documented: list, get, create, update, delete, plus a generated avatar per user. Posts & Comments API Blog-style posts and their nested comments, backed by a fake CRUD API. EASY Posts & Comments API reference — Endpoint reference covering nested /posts/:id/comments and ?userId=/?postId= filtering. Albums & Photos API Albums and their nested photos, each with a real self-hosted image, served through a fake CRUD API. EASY Albums & Photos API reference — Covers nested /albums/:id/photos, plus generated per-photo images. Todos API To-do items with a deterministic completed/incomplete split, exposed through a fake CRUD API. EASY Todos API reference — Documents every endpoint, including ?userId= and ?completed= filtering. TestingURL.dev A sandbox for scraping and HTTP-tooling. All test pages Geekflare © 2026 Geekflare · Built with in London by Geekflare",
+      "products": [],
+      "metadata": [
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        {
+          "name": "description",
+          "content": "A small fake REST API for mocking data in your own apps. Responses are deterministic, JSONPlaceholder-style, and nothing is persisted."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "TestingURL.dev"
+        },
+        {
+          "name": "og:title",
+          "content": "Mock Data · TestingURL.dev"
+        },
+        {
+          "name": "og:description",
+          "content": "A small fake REST API for mocking data in your own apps. Responses are deterministic, JSONPlaceholder-style, and nothing is persisted."
+        },
+        {
+          "name": "og:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:image:width",
+          "content": "1200"
+        },
+        {
+          "name": "og:image:height",
+          "content": "630"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Mock Data · TestingURL.dev"
+        },
+        {
+          "name": "twitter:description",
+          "content": "A small fake REST API for mocking data in your own apps. Responses are deterministic, JSONPlaceholder-style, and nothing is persisted."
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:url",
+          "content": "https://testingurl.dev/mock-data"
+        }
+      ]
+    },
+    {
+      "url": "https://testingurl.dev/generator",
+      "title": "Generators · TestingURL.dev",
+      "text": "TestingURL.dev BY All pages Web Scraping HTTP & Networking Mock Data Generators AI & LLM Testing « All test pages Generators Instant, no-signup generators for bulk test data. Output is fresh every time, unlike the deterministic Mock Data fixtures above. User Generator Bulk fake identities (name, email, phone, address, avatar), fresh every time. EASY Generate users — Interactive generator with instant JSON/CSV download. No signup or email required. Card Generator Synthetic, Luhn-valid test credit card numbers for exercising payment-form validation. EASY Generate test cards — Visa, Mastercard, Amex, and Discover-shaped numbers. Not real, not linked to any account, and cannot be charged. File Generator Dummy files of a given type and size, for checking upload validation. EASY Generate a dummy file — txt, csv, json, or random bytes, at any size up to 5MB. Image Generator A placeholder image at any dimensions you request. EASY Placeholder image — Deterministic per dimension, unlike the other generators here. Try /generator/images/{width}/{height}. TestingURL.dev A sandbox for scraping and HTTP-tooling. All test pages Geekflare © 2026 Geekflare · Built with in London by Geekflare",
+      "products": [],
+      "metadata": [
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        {
+          "name": "description",
+          "content": "Instant, no-signup generators for bulk test data. Output is fresh every time, unlike the deterministic Mock Data fixtures above."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "TestingURL.dev"
+        },
+        {
+          "name": "og:title",
+          "content": "Generators · TestingURL.dev"
+        },
+        {
+          "name": "og:description",
+          "content": "Instant, no-signup generators for bulk test data. Output is fresh every time, unlike the deterministic Mock Data fixtures above."
+        },
+        {
+          "name": "og:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:image:width",
+          "content": "1200"
+        },
+        {
+          "name": "og:image:height",
+          "content": "630"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Generators · TestingURL.dev"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Instant, no-signup generators for bulk test data. Output is fresh every time, unlike the deterministic Mock Data fixtures above."
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:url",
+          "content": "https://testingurl.dev/generator"
+        }
+      ]
+    },
+    {
+      "url": "https://testingurl.dev/ai",
+      "title": "AI & LLM Testing · TestingURL.dev",
+      "text": "TestingURL.dev BY All pages Web Scraping HTTP & Networking Mock Data Generators AI & LLM Testing « All test pages AI & LLM Testing Test fixtures for people building AI agents, LLM-feeding scrapers, and RAG pipelines. Includes prompt-injection isolation testing, a RAG testing dataset with a documented answer key, and RAG testing PDFs and documents built to stress-test extraction. Prompt injection A page with safe, labeled example injection patterns and a benign canary phrase, so you can check that page content stays isolated from an agent's instructions. MEDIUM Prompt injection test page — Seven hidden-text vectors (HTML comments, display:none, off-screen, color-matched, zero-font, alt text, meta description), each with a unique canary. RAG & retrieval corpus A small RAG testing dataset: fifteen short, topically distinct articles paired with a documented answer key, enough to test chunking, embedding, and retrieval end to end and check whether the right result comes back. EASY Corpus & answer key — Every article in the dataset, plus sample queries mapped to the correct expected result. EASY Example article — Available as HTML, plain Markdown, or PDF, and in bulk as JSON at /ai/corpus/articles.json. EASY Full dataset bundle — The whole RAG testing dataset in one download: every article, every format URL, and the answer key in a single JSON file. PDF documents RAG testing PDFs for exercising PDF-to-text extraction, from simple single-column articles up to layouts built specifically to trip up naive parsers. EASY PDF documents — Every RAG testing PDF on the site in one place, including a plain PDF version of each corpus article. MEDIUM Table extraction test — A drawn table (an order log) that tests whether extraction keeps each row's cells together instead of reading columns out of order. HARD Two-column layout test — Two unrelated essays placed side by side to test whether extraction respects column boundaries instead of reading straight across the page. HARD Running header/footer test — A multi-page document with repeated header and footer boilerplate on every page, testing whether extraction strips it out. TestingURL.dev A sandbox for scraping and HTTP-tooling. All test pages Geekflare © 2026 Geekflare · Built with in London by Geekflare",
+      "products": [],
+      "metadata": [
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        {
+          "name": "description",
+          "content": "Test fixtures for people building AI agents, LLM-feeding scrapers, and RAG pipelines. Includes prompt-injection isolation testing, a RAG testing dataset with a documented answer key, and RAG testing PDFs and documents built to stress-test extraction."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "TestingURL.dev"
+        },
+        {
+          "name": "og:title",
+          "content": "AI & LLM Testing · TestingURL.dev"
+        },
+        {
+          "name": "og:description",
+          "content": "Test fixtures for people building AI agents, LLM-feeding scrapers, and RAG pipelines. Includes prompt-injection isolation testing, a RAG testing dataset with a documented answer key, and RAG testing PDFs and documents built to stress-test extraction."
+        },
+        {
+          "name": "og:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:image:width",
+          "content": "1200"
+        },
+        {
+          "name": "og:image:height",
+          "content": "630"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "AI & LLM Testing · TestingURL.dev"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Test fixtures for people building AI agents, LLM-feeding scrapers, and RAG pipelines. Includes prompt-injection isolation testing, a RAG testing dataset with a documented answer key, and RAG testing PDFs and documents built to stress-test extraction."
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:url",
+          "content": "https://testingurl.dev/ai"
+        }
+      ]
+    },
+    {
+      "url": "https://testingurl.dev/scraping/ecommerce",
+      "title": "Ecommerce catalog · TestingURL.dev",
+      "text": "TestingURL.dev BY All pages Web Scraping HTTP & Networking Mock Data Generators AI & LLM Testing « Web Scraping Ecommerce catalog A small fake online store you can browse by category down to individual product pages. This mirrors real ecommerce sites (category → product grid → product detail), a common target for scraping practice. Laptops 15 products Phones 15 products Headphones 15 products Cameras 15 products TestingURL.dev A sandbox for scraping and HTTP-tooling. All test pages Geekflare © 2026 Geekflare · Built with in London by Geekflare",
+      "products": [
+        {
+          "name": "Laptops",
+          "description": "",
+          "price": null,
+          "currency": null,
+          "url": "https://testingurl.dev/scraping/ecommerce/category/laptops",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Phones",
+          "description": "",
+          "price": null,
+          "currency": null,
+          "url": "https://testingurl.dev/scraping/ecommerce/category/phones",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Headphones",
+          "description": "",
+          "price": null,
+          "currency": null,
+          "url": "https://testingurl.dev/scraping/ecommerce/category/headphones",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Cameras",
+          "description": "",
+          "price": null,
+          "currency": null,
+          "url": "https://testingurl.dev/scraping/ecommerce/category/cameras",
+          "availability": null,
+          "source": "product-card"
+        }
+      ],
+      "metadata": [
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        {
+          "name": "description",
+          "content": "A fake ecommerce store for practicing scraping category listings and product detail pages, the classic web-scraping test target."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "TestingURL.dev"
+        },
+        {
+          "name": "og:title",
+          "content": "Ecommerce catalog · TestingURL.dev"
+        },
+        {
+          "name": "og:description",
+          "content": "A fake ecommerce store for practicing scraping category listings and product detail pages, the classic web-scraping test target."
+        },
+        {
+          "name": "og:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:image:width",
+          "content": "1200"
+        },
+        {
+          "name": "og:image:height",
+          "content": "630"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Ecommerce catalog · TestingURL.dev"
+        },
+        {
+          "name": "twitter:description",
+          "content": "A fake ecommerce store for practicing scraping category listings and product detail pages, the classic web-scraping test target."
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:url",
+          "content": "https://testingurl.dev/scraping/ecommerce"
+        }
+      ]
+    },
+    {
+      "url": "https://testingurl.dev/scraping/ecommerce/product/1",
+      "title": "Vertex Air Laptop 107 · TestingURL.dev",
+      "text": "TestingURL.dev BY All pages Web Scraping HTTP & Networking Mock Data Generators AI & LLM Testing Ecommerce catalog / Laptops Vertex Air Laptop 107 $86.00 ★★☆☆☆ (2/5) 17 in stock SKU: TU-1-SIL Designed with a minimalist aesthetic. Color: Silver Related products Ember Max Laptop 117 $136.00 Vertex Lite Laptop 127 $186.00 Ember Pro Laptop 137 $236.00 TestingURL.dev A sandbox for scraping and HTTP-tooling. All test pages Geekflare © 2026 Geekflare · Built with in London by Geekflare",
+      "products": [
+        {
+          "name": "Vertex Air Laptop 107",
+          "description": "Designed with a minimalist aesthetic.",
+          "price": 86,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/1",
+          "availability": "InStock",
+          "source": "json-ld"
+        },
+        {
+          "name": "Ember Max Laptop 117",
+          "description": "",
+          "price": 136,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/2",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Vertex Lite Laptop 127",
+          "description": "",
+          "price": 186,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/3",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Ember Pro Laptop 137",
+          "description": "",
+          "price": 236,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/4",
+          "availability": null,
+          "source": "product-card"
+        }
+      ],
+      "metadata": [
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        {
+          "name": "description",
+          "content": "Vertex Air Laptop 107: $86.00. Designed with a minimalist aesthetic."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "TestingURL.dev"
+        },
+        {
+          "name": "og:title",
+          "content": "Vertex Air Laptop 107 · TestingURL.dev"
+        },
+        {
+          "name": "og:description",
+          "content": "Vertex Air Laptop 107: $86.00. Designed with a minimalist aesthetic."
+        },
+        {
+          "name": "og:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:image:width",
+          "content": "1200"
+        },
+        {
+          "name": "og:image:height",
+          "content": "630"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Vertex Air Laptop 107 · TestingURL.dev"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Vertex Air Laptop 107: $86.00. Designed with a minimalist aesthetic."
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:url",
+          "content": "https://testingurl.dev/scraping/ecommerce/product/1"
+        }
+      ]
+    },
+    {
+      "url": "https://testingurl.dev/scraping/ecommerce/product/2",
+      "title": "Ember Max Laptop 117 · TestingURL.dev",
+      "text": "TestingURL.dev BY All pages Web Scraping HTTP & Networking Mock Data Generators AI & LLM Testing Ecommerce catalog / Laptops Ember Max Laptop 117 $136.00 ★★★★★ (5/5) 5 in stock SKU: TU-2-MID Balances battery life and speed. Color: Midnight Blue Related products Vertex Air Laptop 107 $86.00 Vertex Lite Laptop 127 $186.00 Ember Pro Laptop 137 $236.00 TestingURL.dev A sandbox for scraping and HTTP-tooling. All test pages Geekflare © 2026 Geekflare · Built with in London by Geekflare",
+      "products": [
+        {
+          "name": "Ember Max Laptop 117",
+          "description": "Balances battery life and speed.",
+          "price": 136,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/2",
+          "availability": "InStock",
+          "source": "json-ld"
+        },
+        {
+          "name": "Vertex Air Laptop 107",
+          "description": "",
+          "price": 86,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/1",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Vertex Lite Laptop 127",
+          "description": "",
+          "price": 186,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/3",
+          "availability": null,
+          "source": "product-card"
+        },
+        {
+          "name": "Ember Pro Laptop 137",
+          "description": "",
+          "price": 236,
+          "currency": "USD",
+          "url": "https://testingurl.dev/scraping/ecommerce/product/4",
+          "availability": null,
+          "source": "product-card"
+        }
+      ],
+      "metadata": [
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        {
+          "name": "description",
+          "content": "Ember Max Laptop 117: $136.00. Balances battery life and speed."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "TestingURL.dev"
+        },
+        {
+          "name": "og:title",
+          "content": "Ember Max Laptop 117 · TestingURL.dev"
+        },
+        {
+          "name": "og:description",
+          "content": "Ember Max Laptop 117: $136.00. Balances battery life and speed."
+        },
+        {
+          "name": "og:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:image:width",
+          "content": "1200"
+        },
+        {
+          "name": "og:image:height",
+          "content": "630"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Ember Max Laptop 117 · TestingURL.dev"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Ember Max Laptop 117: $136.00. Balances battery life and speed."
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://testingurl.dev/og-image.png"
+        },
+        {
+          "name": "og:url",
+          "content": "https://testingurl.dev/scraping/ecommerce/product/2"
+        }
+      ]
+    }
+  ]
+}

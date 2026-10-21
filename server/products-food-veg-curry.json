@@ -1,0 +1,35 @@
+{
+  "website": "https://lepondykitchen.com/restaurant",
+  "vendor": "Food",
+  "category": "Veg Curry",
+  "productCount": 3,
+  "products": [
+    {
+      "name": "Mixed Veg Kurma",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Curry",
+      "extractedAt": "2026-10-14T08:44:52.891Z"
+    },
+    {
+      "name": "Dal Makini",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Curry",
+      "extractedAt": "2026-10-14T08:44:52.891Z"
+    },
+    {
+      "name": "3 Dal Ghee Roast",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Curry",
+      "extractedAt": "2026-10-14T08:44:52.891Z"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "website": "https://lepondykitchen.com/restaurant",
+  "vendor": "Food",
+  "category": "Desserts",
+  "productCount": 3,
+  "products": [
+    {
+      "name": "Bread Halwa",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Desserts",
+      "extractedAt": "2026-10-14T08:43:17.000Z"
+    },
+    {
+      "name": "Badam Halwa",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Desserts",
+      "extractedAt": "2026-10-14T08:43:17.000Z"
+    },
+    {
+      "name": "Rasamalai",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Desserts",
+      "extractedAt": "2026-10-14T08:43:17.000Z"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+
+{
+  "vendorName": "Food",
+  "vendorType": "Food and restaurant",
+  "source": "Screen recording provided for the LePondy Kitchen demo",
+  "sourceObserved": true,
+  "catalogCountDisplayed": 115,
+  "openingHours": {
+    "opens": "10:00 AM",
+    "closes": "10:00 PM",
+    "verificationStatus": "Observed in recording; current hours not independently verified"
+  },
+  "contact": {
+    "phone": "+1 740-803-6603",
+    "verificationStatus": "Observed in recording; current contact details not independently verified"
+  },
+  "verifiedProducts": [
+    {
+      "name": "Potato Channa Biryani",
+      "price": null,
+      "currency": null
+    },
+    {
+      "name": "Chilli Egg",
+      "price": null,
+      "currency": null
+    },
+    {
+      "name": "Cashews Pakoda",
+      "price": null,
+      "currency": null
+    },
+    {
+      "name": "Mutton Pepper Fry",
+      "price": null,
+      "currency": null
+    },
+    {
+      "name": "Idiyappam",
+      "price": null,
+      "currency": null
+    },
+    {
+      "name": "Karupati Tea/Coffee",
+      "price": null,
+      "currency": null
+    },
+    {
+      "name": "Paneer Biryani",
+      "price": null,
+      "currency": null
+    },
+    {
+      "name": "Chicken 65",
+      "price": null,
+      "currency": null
+    }
+  ],
+  "menu": [],
+  "categories": [],
+  "notes": [
+    "Product names are transcribed from the provided recording.",
+    "Prices are not confirmed; do not invent or display estimated prices.",
+    "Opening hours and contact details were observed in the recording but have not been independently verified as current.",
+    "Only add additional products and prices when they can be read clearly from an authorized source.",
+    "Do not claim live availability or order-processing capability unless connected to the actual system."
+  ]
+}

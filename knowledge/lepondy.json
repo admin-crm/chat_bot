@@ -1,0 +1,44 @@
+
+{
+  "websiteId": "lepondy-kitchen",
+  "businessName": "LePondy Kitchen",
+  "businessType": "Online food and grocery shopping",
+  "websiteUrl": "https://lepondykitchen.com/restaurant",
+  "knowledge": {
+    "description": "LePondy Kitchen provides an online shopping experience. The website includes vendor options for Food and Native Grocers LLC.",
+    "vendors": [
+      {
+        "name": "Food",
+        "menu": [],
+        "verifiedProducts": []
+      },
+      {
+        "name": "Native Grocers LLC",
+        "menu": [],
+        "verifiedProducts": []
+      }
+    ],
+    "address": null,
+    "openingHours": null,
+    "contact": null,
+    "menu": [],
+    "products": [],
+    "policies": []
+  },
+  "demoSettings": {
+    "mode": "demo",
+    "source": "https://lepondykitchen.com/restaurant",
+    "note": "Only verified information should be used. Add sample information only when it is clearly labeled as sample data and never present it as actual restaurant information."
+  },
+  "instructions": {
+    "role": "You are the virtual assistant for LePondy Kitchen.",
+    "rules": [
+      "Answer using only verified business information provided in the knowledge base.",
+      "Do not invent menu items, product names, prices, opening hours, contact details, or policies.",
+      "If information is missing, say that you do not have confirmed information.",
+      "Ask which vendor the customer means when a question could refer to either vendor.",
+      "Keep answers friendly, professional, and concise.",
+      "Do not claim to place orders, process payments, or check live product availability unless those features are connected to real systems."
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "website": "https://lepondykitchen.com/restaurant",
+  "vendor": "Food",
+  "category": "Rotti",
+  "productCount": 9,
+  "products": [
+    {
+      "name": "Sweet banana parotta",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Rotti",
+      "extractedAt": "2026-10-14T07:27:22.138Z"
+    },
+    {
+      "name": "Kothu parotta",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Rotti",
+      "extractedAt": "2026-10-14T07:27:22.138Z"
+    },
+    {
+      "name": "Naan",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Rotti",
+      "extractedAt": "2026-10-14T07:27:22.138Z"
+    },
+    {
+      "name": "Parotta",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Rotti",
+      "extractedAt": "2026-10-14T07:27:22.138Z"
+    },
+    {
+      "name": "Chapati",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Rotti",
+      "extractedAt": "2026-10-14T07:27:22.138Z"
+    },
+    {
+      "name": "Ghee parotta",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Rotti",
+      "extractedAt": "2026-10-14T07:27:22.138Z"
+    },
+    {
+      "name": "Phulka",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Rotti",
+      "extractedAt": "2026-10-14T07:27:22.138Z"
+    },
+    {
+      "name": "Potato/onion/paneer kulcha",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Rotti",
+      "extractedAt": "2026-10-14T07:27:22.138Z"
+    },
+    {
+      "name": "Bun parotta",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Rotti",
+      "extractedAt": "2026-10-14T07:27:22.138Z"
+    }
+  ]
+}

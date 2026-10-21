@@ -1,0 +1,44 @@
+{
+  "website": "https://lepondykitchen.com/restaurant",
+  "vendor": "Native Grocers LLC",
+  "category": "Jaggery",
+  "productCount": 4,
+  "products": [
+    {
+      "name": "SDPMart Premium Jaggery Powder",
+      "price": 4.99,
+      "previousPrice": 5.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Jaggery",
+      "extractedAt": "2026-10-13T09:54:10.096Z"
+    },
+    {
+      "name": "SDPMart Premium Palm Jaggery Powder",
+      "price": 6.99,
+      "previousPrice": 7.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Jaggery",
+      "extractedAt": "2026-10-13T09:54:10.096Z"
+    },
+    {
+      "name": "SDPMart Premium Filter Coffee",
+      "price": 7.99,
+      "previousPrice": 8.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Jaggery",
+      "extractedAt": "2026-10-13T09:54:10.096Z"
+    },
+    {
+      "name": "SDPMart Country Cow Ghee",
+      "price": 11.99,
+      "previousPrice": 12.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Jaggery",
+      "extractedAt": "2026-10-13T09:54:10.096Z"
+    }
+  ]
+}

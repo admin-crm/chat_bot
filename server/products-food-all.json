@@ -1,0 +1,1058 @@
+{
+  "website": "https://lepondykitchen.com/restaurant",
+  "vendor": "Food",
+  "generatedAt": "2026-10-14T08:55:06.233Z",
+  "sourceFiles": [
+    "products-food-biriyani.json",
+    "products-food-desserts.json",
+    "products-food-dosa.json",
+    "products-food-drinks.json",
+    "products-food-millets.json",
+    "products-food-non-veg-appetizer.json",
+    "products-food-non-veg-curry.json",
+    "products-food-pulav.json",
+    "products-food-rotti.json",
+    "products-food-veg-appetizer.json",
+    "products-food-veg-curry.json"
+  ],
+  "sourceRecordCount": 115,
+  "uniqueProductCount": 115,
+  "duplicateProductNames": [],
+  "products": [
+    {
+      "name": "Potato channa biryani",
+      "price": 9.99,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Biriyani",
+      "extractedAt": "2026-10-14T06:57:42.410Z"
+    },
+    {
+      "name": "Paneer biryani",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Biriyani",
+      "extractedAt": "2026-10-14T06:57:42.410Z"
+    },
+    {
+      "name": "Shrimp biryani",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Biriyani",
+      "extractedAt": "2026-10-14T06:57:42.410Z"
+    },
+    {
+      "name": "Paneer 65 biryani",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Biriyani",
+      "extractedAt": "2026-10-14T06:57:42.410Z"
+    },
+    {
+      "name": "Mutton biryani",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Biriyani",
+      "extractedAt": "2026-10-14T06:57:42.410Z"
+    },
+    {
+      "name": "Mutton fry biryani",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Biriyani",
+      "extractedAt": "2026-10-14T06:57:42.410Z"
+    },
+    {
+      "name": "Meal maker peas biryani",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Biriyani",
+      "extractedAt": "2026-10-14T06:57:42.410Z"
+    },
+    {
+      "name": "Fish 65 biryani",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Biriyani",
+      "extractedAt": "2026-10-14T06:57:42.410Z"
+    },
+    {
+      "name": "Chicken 65 biryani",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Biriyani",
+      "extractedAt": "2026-10-14T06:57:42.410Z"
+    },
+    {
+      "name": "Veg paneer ball biryani",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Biriyani",
+      "extractedAt": "2026-10-14T06:57:42.410Z"
+    },
+    {
+      "name": "Mixed veg biryani",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Biriyani",
+      "extractedAt": "2026-10-14T06:57:42.410Z"
+    },
+    {
+      "name": "Egg biryani",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Biriyani",
+      "extractedAt": "2026-10-14T06:57:42.410Z"
+    },
+    {
+      "name": "Chicken tandoori biryani",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Biriyani",
+      "extractedAt": "2026-10-14T06:57:42.410Z"
+    },
+    {
+      "name": "Chicken biryani",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Biriyani",
+      "extractedAt": "2026-10-14T06:57:42.410Z"
+    },
+    {
+      "name": "Gobi 65 biryani",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Biriyani",
+      "extractedAt": "2026-10-14T06:57:42.410Z"
+    },
+    {
+      "name": "Shrimp 65 Biryani",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Biriyani",
+      "extractedAt": "2026-10-14T06:57:42.410Z"
+    },
+    {
+      "name": "Bread Halwa",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Desserts",
+      "extractedAt": "2026-10-14T08:43:17.000Z"
+    },
+    {
+      "name": "Badam Halwa",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Desserts",
+      "extractedAt": "2026-10-14T08:43:17.000Z"
+    },
+    {
+      "name": "Rasamalai",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Desserts",
+      "extractedAt": "2026-10-14T08:43:17.000Z"
+    },
+    {
+      "name": "Idiyappam",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Dosa",
+      "extractedAt": "2026-10-14T08:47:06.004Z"
+    },
+    {
+      "name": "Appam",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Dosa",
+      "extractedAt": "2026-10-14T08:47:06.004Z"
+    },
+    {
+      "name": "Plain/onion/egg dosa",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Dosa",
+      "extractedAt": "2026-10-14T08:47:06.004Z"
+    },
+    {
+      "name": "Masala dosa",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Dosa",
+      "extractedAt": "2026-10-14T08:47:06.004Z"
+    },
+    {
+      "name": "Kari dosa",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Dosa",
+      "extractedAt": "2026-10-14T08:47:06.004Z"
+    },
+    {
+      "name": "Cheese masala dosa",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Dosa",
+      "extractedAt": "2026-10-14T08:47:06.004Z"
+    },
+    {
+      "name": "Karupati Tea/Coffee",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    },
+    {
+      "name": "Sweet Lassi",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    },
+    {
+      "name": "Mango Lassi",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    },
+    {
+      "name": "Black Pearl Karupatti Kanji",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    },
+    {
+      "name": "Organic Protein milk",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    },
+    {
+      "name": "Nuts & Dry fruits shakes",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    },
+    {
+      "name": "Badam milk",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    },
+    {
+      "name": "Jigarthanda",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    },
+    {
+      "name": "Rose milk",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    },
+    {
+      "name": "Filter coffee",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    },
+    {
+      "name": "Jowar Cholafal",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Millets",
+      "extractedAt": "2026-10-14T08:45:57.520Z"
+    },
+    {
+      "name": "Ragi Puttu",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Millets",
+      "extractedAt": "2026-10-14T08:45:57.520Z"
+    },
+    {
+      "name": "Little Millet Upma",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Millets",
+      "extractedAt": "2026-10-14T08:45:57.520Z"
+    },
+    {
+      "name": "Bajra Thalipeeth",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Millets",
+      "extractedAt": "2026-10-14T08:45:57.520Z"
+    },
+    {
+      "name": "Ragi Uppitu",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Millets",
+      "extractedAt": "2026-10-14T08:45:57.520Z"
+    },
+    {
+      "name": "Jowar Akki Roti",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Millets",
+      "extractedAt": "2026-10-14T08:45:57.520Z"
+    },
+    {
+      "name": "Ragi Ambali",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Millets",
+      "extractedAt": "2026-10-14T08:45:57.520Z"
+    },
+    {
+      "name": "Bajra Bhakri",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Millets",
+      "extractedAt": "2026-10-14T08:45:57.520Z"
+    },
+    {
+      "name": "Mutton pepper fry",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Chilli egg",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Chicken lollipop",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Chicken 65",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Mutton chetinadu fry",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Mutton Kola Urundai",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Mutton Lollipop",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Shrimp 65",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Mutton baji",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Fish finger",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Chilli chicken",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Fish 65",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Mutton Sukka",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Egg 65",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Goat liver fry",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Shrimp vada",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Chilli Fish",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Fish pollichathu",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Chicken pakoda",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Chicken podíamass",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Prawn vada",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Chilli prawns",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Fish Puttu",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-veg Appetizer",
+      "extractedAt": "2026-10-14T07:35:27.698Z"
+    },
+    {
+      "name": "Kola Urundai Kozhambu",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-Veg Curry",
+      "extractedAt": "2026-10-14T08:48:50.389Z"
+    },
+    {
+      "name": "Shrimp gravy",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-Veg Curry",
+      "extractedAt": "2026-10-14T08:48:50.389Z"
+    },
+    {
+      "name": "Mutton Gravy",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-Veg Curry",
+      "extractedAt": "2026-10-14T08:48:50.389Z"
+    },
+    {
+      "name": "Fish Gravy",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-Veg Curry",
+      "extractedAt": "2026-10-14T08:48:50.389Z"
+    },
+    {
+      "name": "Chicken Paya",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-Veg Curry",
+      "extractedAt": "2026-10-14T08:48:50.389Z"
+    },
+    {
+      "name": "Chicken Gravy",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Non-Veg Curry",
+      "extractedAt": "2026-10-14T08:48:50.389Z"
+    },
+    {
+      "name": "Green Potato pulav",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Pulav",
+      "extractedAt": "2026-10-14T08:40:37.225Z"
+    },
+    {
+      "name": "Mutton White Pulav",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Pulav",
+      "extractedAt": "2026-10-14T08:40:37.225Z"
+    },
+    {
+      "name": "Coconut milk ghee pulav",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Pulav",
+      "extractedAt": "2026-10-14T08:40:37.225Z"
+    },
+    {
+      "name": "Chicken white pulav",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Pulav",
+      "extractedAt": "2026-10-14T08:40:37.225Z"
+    },
+    {
+      "name": "Seeraga Samba ghee pulav",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Pulav",
+      "extractedAt": "2026-10-14T08:40:37.225Z"
+    },
+    {
+      "name": "Egg pulav",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Pulav",
+      "extractedAt": "2026-10-14T08:40:37.225Z"
+    },
+    {
+      "name": "Sweet banana parotta",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Rotti",
+      "extractedAt": "2026-10-14T07:27:22.138Z"
+    },
+    {
+      "name": "Kothu parotta",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Rotti",
+      "extractedAt": "2026-10-14T07:27:22.138Z"
+    },
+    {
+      "name": "Naan",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Rotti",
+      "extractedAt": "2026-10-14T07:27:22.138Z"
+    },
+    {
+      "name": "Parotta",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Rotti",
+      "extractedAt": "2026-10-14T07:27:22.138Z"
+    },
+    {
+      "name": "Chapati",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Rotti",
+      "extractedAt": "2026-10-14T07:27:22.138Z"
+    },
+    {
+      "name": "Ghee parotta",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Rotti",
+      "extractedAt": "2026-10-14T07:27:22.138Z"
+    },
+    {
+      "name": "Phulka",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Rotti",
+      "extractedAt": "2026-10-14T07:27:22.138Z"
+    },
+    {
+      "name": "Potato/onion/paneer kulcha",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Rotti",
+      "extractedAt": "2026-10-14T07:27:22.138Z"
+    },
+    {
+      "name": "Bun parotta",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Rotti",
+      "extractedAt": "2026-10-14T07:27:22.138Z"
+    },
+    {
+      "name": "Cashews Pakoda",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Palak Pakoda",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Plantain Baji",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Paneer Bhaji",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Mushroom 65",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Potato baji",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Veg ball",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Gobi Manchurian",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Chilli mushroom",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Paneer 65",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Spinach vada",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Sambar Vada",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Chilli gobi",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Onion Pakoda",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Urad Dal Vada",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Paneer fingers",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Samosa",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Cutlet",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Potato bonda",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Onion Bhaji",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "3 Dal vada",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Gobi 65",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Chilli paneer",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Paneer Ball",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Veg pakoda",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Appetizer",
+      "extractedAt": "2026-10-14T07:21:01.373Z"
+    },
+    {
+      "name": "Mixed Veg Kurma",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Curry",
+      "extractedAt": "2026-10-14T08:44:52.891Z"
+    },
+    {
+      "name": "Dal Makini",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Curry",
+      "extractedAt": "2026-10-14T08:44:52.891Z"
+    },
+    {
+      "name": "3 Dal Ghee Roast",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Veg Curry",
+      "extractedAt": "2026-10-14T08:44:52.891Z"
+    }
+  ]
+}

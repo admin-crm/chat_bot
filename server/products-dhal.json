@@ -1,0 +1,35 @@
+{
+  "website": "https://lepondykitchen.com/restaurant",
+  "vendor": "Native Grocers LLC",
+  "category": "Dhal",
+  "productCount": 3,
+  "products": [
+    {
+      "name": "SDPMart Premium Moong Dhal",
+      "price": 7.49,
+      "previousPrice": 8.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Dhal",
+      "extractedAt": "2026-10-13T09:56:21.552Z"
+    },
+    {
+      "name": "SDPMart Premium URAD Dhal (Whole White)",
+      "price": 8.49,
+      "previousPrice": 9.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Dhal",
+      "extractedAt": "2026-10-13T09:56:21.552Z"
+    },
+    {
+      "name": "SDPMart Premium Toor Dhal",
+      "price": 8.49,
+      "previousPrice": 9.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Dhal",
+      "extractedAt": "2026-10-13T09:56:21.552Z"
+    }
+  ]
+}

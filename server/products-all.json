@@ -1,0 +1,535 @@
+{
+  "website": "https://lepondykitchen.com/restaurant",
+  "vendor": "Native Grocers LLC",
+  "generatedAt": "2026-10-13T10:45:27.303Z",
+  "sourceFiles": [
+    "products-dhal.json",
+    "products-health-mix-powder.json",
+    "products-jaggery.json",
+    "products-kitchen-equipments.json",
+    "products-millet-noodles.json",
+    "products-raw-millets.json",
+    "products-rice-flakes-flours.json",
+    "products-snacks.json"
+  ],
+  "sourceRecordCount": 43,
+  "uniqueProductCount": 43,
+  "products": [
+    {
+      "name": "SDPMart Premium Moong Dhal",
+      "price": 7.49,
+      "previousPrice": 8.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Dhal",
+      "extractedAt": "2026-10-13T09:56:21.552Z",
+      "categories": [
+        "Dhal"
+      ]
+    },
+    {
+      "name": "SDPMart Premium URAD Dhal (Whole White)",
+      "price": 8.49,
+      "previousPrice": 9.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Dhal",
+      "extractedAt": "2026-10-13T09:56:21.552Z",
+      "categories": [
+        "Dhal"
+      ]
+    },
+    {
+      "name": "SDPMart Premium Toor Dhal",
+      "price": 8.49,
+      "previousPrice": 9.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Dhal",
+      "extractedAt": "2026-10-13T09:56:21.552Z",
+      "categories": [
+        "Dhal"
+      ]
+    },
+    {
+      "name": "SDPMart Premium Health Mix Powder",
+      "price": 6.99,
+      "previousPrice": 7.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Health Mix powder",
+      "extractedAt": "2026-10-13T10:42:41.363Z",
+      "categories": [
+        "Health Mix powder"
+      ]
+    },
+    {
+      "name": "SDPMart Premium Jaggery Powder",
+      "price": 4.99,
+      "previousPrice": 5.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Jaggery",
+      "extractedAt": "2026-10-13T09:54:10.096Z",
+      "categories": [
+        "Jaggery"
+      ]
+    },
+    {
+      "name": "SDPMart Premium Palm Jaggery Powder",
+      "price": 6.99,
+      "previousPrice": 7.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Jaggery",
+      "extractedAt": "2026-10-13T09:54:10.096Z",
+      "categories": [
+        "Jaggery"
+      ]
+    },
+    {
+      "name": "SDPMart Premium Filter Coffee",
+      "price": 7.99,
+      "previousPrice": 8.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Jaggery",
+      "extractedAt": "2026-10-13T09:54:10.096Z",
+      "categories": [
+        "Jaggery"
+      ]
+    },
+    {
+      "name": "SDPMart Country Cow Ghee",
+      "price": 11.99,
+      "previousPrice": 12.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Jaggery",
+      "extractedAt": "2026-10-13T09:54:10.096Z",
+      "categories": [
+        "Jaggery"
+      ]
+    },
+    {
+      "name": "Elgi Ultra Plus Gold Wet Grinder",
+      "price": 299.99,
+      "previousPrice": 300.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Kitchen Equipments",
+      "extractedAt": "2026-10-13T09:57:24.729Z",
+      "categories": [
+        "Kitchen Equipments"
+      ]
+    },
+    {
+      "name": "Prestige Deluxe Alpha Svachh Pressure Cooker",
+      "price": 54.99,
+      "previousPrice": 55.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Kitchen Equipments",
+      "extractedAt": "2026-10-13T09:57:24.729Z",
+      "categories": [
+        "Kitchen Equipments"
+      ]
+    },
+    {
+      "name": "Preethi Steel Mixed Grinder",
+      "price": 124.99,
+      "previousPrice": 125.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Kitchen Equipments",
+      "extractedAt": "2026-10-13T09:57:24.729Z",
+      "categories": [
+        "Kitchen Equipments"
+      ]
+    },
+    {
+      "name": "Prestige AL Pressure Cooker",
+      "price": 74.99,
+      "previousPrice": 75.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Kitchen Equipments",
+      "extractedAt": "2026-10-13T09:57:24.729Z",
+      "categories": [
+        "Kitchen Equipments"
+      ]
+    },
+    {
+      "name": "ELGI Ultra Plus Wet Grinder",
+      "price": 349.99,
+      "previousPrice": 350.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Kitchen Equipments",
+      "extractedAt": "2026-10-13T09:57:24.729Z",
+      "categories": [
+        "Kitchen Equipments"
+      ]
+    },
+    {
+      "name": "SDPMart FoxTail Millet Noodles",
+      "price": 2.99,
+      "previousPrice": 3.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Millet Noodles",
+      "extractedAt": "2026-10-13T09:55:08.387Z",
+      "categories": [
+        "Millet Noodles"
+      ]
+    },
+    {
+      "name": "SDPMart  Red Rice Noodles",
+      "price": 2.99,
+      "previousPrice": 3.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Millet Noodles",
+      "extractedAt": "2026-10-13T09:55:08.387Z",
+      "categories": [
+        "Millet Noodles"
+      ]
+    },
+    {
+      "name": "SDPMart Ragi Millet Noodles",
+      "price": 2.99,
+      "previousPrice": 3.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Millet Noodles",
+      "extractedAt": "2026-10-13T09:55:08.387Z",
+      "categories": [
+        "Millet Noodles"
+      ]
+    },
+    {
+      "name": "SDPMart  Moringa Millet Noodles",
+      "price": 2.99,
+      "previousPrice": 3.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Millet Noodles",
+      "extractedAt": "2026-10-13T09:55:08.387Z",
+      "categories": [
+        "Millet Noodles"
+      ]
+    },
+    {
+      "name": "SDPMart  Kodo Millet Noodles",
+      "price": 2.99,
+      "previousPrice": 3.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Millet Noodles",
+      "extractedAt": "2026-10-13T09:55:08.387Z",
+      "categories": [
+        "Millet Noodles"
+      ]
+    },
+    {
+      "name": "SDPMart  Samba Millet  Noodles",
+      "price": 2.99,
+      "previousPrice": 3.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Millet Noodles",
+      "extractedAt": "2026-10-13T09:55:08.387Z",
+      "categories": [
+        "Millet Noodles"
+      ]
+    },
+    {
+      "name": "SDPMart  Pearl Millet Noodles",
+      "price": 2.99,
+      "previousPrice": 3.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Millet Noodles",
+      "extractedAt": "2026-10-13T09:55:08.387Z",
+      "categories": [
+        "Millet Noodles"
+      ]
+    },
+    {
+      "name": "SDPMart  Little Millet Noodles",
+      "price": 2.99,
+      "previousPrice": 3.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Millet Noodles",
+      "extractedAt": "2026-10-13T09:55:08.387Z",
+      "categories": [
+        "Millet Noodles"
+      ]
+    },
+    {
+      "name": "SDPMart  Jowar Millet Noodles",
+      "price": 2.99,
+      "previousPrice": 3.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Millet Noodles",
+      "extractedAt": "2026-10-13T09:55:08.387Z",
+      "categories": [
+        "Millet Noodles"
+      ]
+    },
+    {
+      "name": "SDPMart Barnyard Millet Noodles",
+      "price": 2.99,
+      "previousPrice": 3.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Millet Noodles",
+      "extractedAt": "2026-10-13T09:55:08.387Z",
+      "categories": [
+        "Millet Noodles"
+      ]
+    },
+    {
+      "name": "SDPMart  Proso Millet Noodles",
+      "price": 2.99,
+      "previousPrice": 3.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Millet Noodles",
+      "extractedAt": "2026-10-13T09:55:08.387Z",
+      "categories": [
+        "Millet Noodles"
+      ]
+    },
+    {
+      "name": "SDPMart  Mixed Millet Noodles",
+      "price": 2.99,
+      "previousPrice": 3.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Millet Noodles",
+      "extractedAt": "2026-10-13T09:55:08.387Z",
+      "categories": [
+        "Millet Noodles"
+      ]
+    },
+    {
+      "name": "SDPMart Kodo Millet",
+      "price": 5.99,
+      "previousPrice": 6.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Raw Millets",
+      "extractedAt": "2026-10-13T09:26:19.954Z",
+      "categories": [
+        "Raw Millets"
+      ]
+    },
+    {
+      "name": "SDPMart Little Millet",
+      "price": 5.99,
+      "previousPrice": 6.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Raw Millets",
+      "extractedAt": "2026-10-13T09:26:19.954Z",
+      "categories": [
+        "Raw Millets"
+      ]
+    },
+    {
+      "name": "SDPMart Foxtail Millet",
+      "price": 5.99,
+      "previousPrice": 6.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Raw Millets",
+      "extractedAt": "2026-10-13T09:26:19.954Z",
+      "categories": [
+        "Raw Millets"
+      ]
+    },
+    {
+      "name": "SDPMart Proso Millet",
+      "price": 5.99,
+      "previousPrice": 6.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Raw Millets",
+      "extractedAt": "2026-10-13T09:26:19.954Z",
+      "categories": [
+        "Raw Millets"
+      ]
+    },
+    {
+      "name": "SDPMart Barnyard Millet",
+      "price": 5.99,
+      "previousPrice": 6.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Raw Millets",
+      "extractedAt": "2026-10-13T09:26:19.954Z",
+      "categories": [
+        "Raw Millets"
+      ]
+    },
+    {
+      "name": "SDPMart Mappillai Samba Rice Flakes",
+      "price": 4.49,
+      "previousPrice": 5.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Rice Flakes & Flours",
+      "extractedAt": "2026-10-13T09:58:56.924Z",
+      "categories": [
+        "Rice Flakes & Flours"
+      ]
+    },
+    {
+      "name": "SDPMart Poongar Rice Puttu Flour",
+      "price": 4.99,
+      "previousPrice": 5.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Rice Flakes & Flours",
+      "extractedAt": "2026-10-13T09:58:56.924Z",
+      "categories": [
+        "Rice Flakes & Flours"
+      ]
+    },
+    {
+      "name": "SDPMart Black Kavuni Rice Flakes",
+      "price": 4.99,
+      "previousPrice": 5.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Rice Flakes & Flours",
+      "extractedAt": "2026-10-13T09:58:56.924Z",
+      "categories": [
+        "Rice Flakes & Flours"
+      ]
+    },
+    {
+      "name": "Thattai",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z",
+      "categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "name": "Poondu Murukku",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z",
+      "categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "name": "Tapioca Finger Chips",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z",
+      "categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "name": "Andhra Murukku",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z",
+      "categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "name": "Kai Murukku",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z",
+      "categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "name": "Kara Sev",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z",
+      "categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "name": "Kara Boondi",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z",
+      "categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "name": "Mini Murukku",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z",
+      "categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "name": "Kara Mini Thattai",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z",
+      "categories": [
+        "Snacks"
+      ]
+    },
+    {
+      "name": "Nendhiram Chips",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z",
+      "categories": [
+        "Snacks"
+      ]
+    }
+  ]
+}

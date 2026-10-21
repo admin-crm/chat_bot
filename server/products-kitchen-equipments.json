@@ -1,0 +1,53 @@
+{
+  "website": "https://lepondykitchen.com/restaurant",
+  "vendor": "Native Grocers LLC",
+  "category": "Kitchen Equipments",
+  "productCount": 5,
+  "products": [
+    {
+      "name": "Elgi Ultra Plus Gold Wet Grinder",
+      "price": 299.99,
+      "previousPrice": 300.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Kitchen Equipments",
+      "extractedAt": "2026-10-13T09:57:24.729Z"
+    },
+    {
+      "name": "Prestige Deluxe Alpha Svachh Pressure Cooker",
+      "price": 54.99,
+      "previousPrice": 55.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Kitchen Equipments",
+      "extractedAt": "2026-10-13T09:57:24.729Z"
+    },
+    {
+      "name": "Preethi Steel Mixed Grinder",
+      "price": 124.99,
+      "previousPrice": 125.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Kitchen Equipments",
+      "extractedAt": "2026-10-13T09:57:24.729Z"
+    },
+    {
+      "name": "Prestige AL Pressure Cooker",
+      "price": 74.99,
+      "previousPrice": 75.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Kitchen Equipments",
+      "extractedAt": "2026-10-13T09:57:24.729Z"
+    },
+    {
+      "name": "ELGI Ultra Plus Wet Grinder",
+      "price": 349.99,
+      "previousPrice": 350.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Kitchen Equipments",
+      "extractedAt": "2026-10-13T09:57:24.729Z"
+    }
+  ]
+}

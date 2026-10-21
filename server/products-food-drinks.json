@@ -1,0 +1,98 @@
+{
+  "website": "https://lepondykitchen.com/restaurant",
+  "vendor": "Food",
+  "category": "Drinks",
+  "productCount": 10,
+  "products": [
+    {
+      "name": "Karupati Tea/Coffee",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    },
+    {
+      "name": "Sweet Lassi",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    },
+    {
+      "name": "Mango Lassi",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    },
+    {
+      "name": "Black Pearl Karupatti Kanji",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    },
+    {
+      "name": "Organic Protein milk",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    },
+    {
+      "name": "Nuts & Dry fruits shakes",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    },
+    {
+      "name": "Badam milk",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    },
+    {
+      "name": "Jigarthanda",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    },
+    {
+      "name": "Rose milk",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    },
+    {
+      "name": "Filter coffee",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Drinks",
+      "extractedAt": "2026-10-14T07:29:30.340Z"
+    }
+  ]
+}

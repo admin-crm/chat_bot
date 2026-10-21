@@ -1,0 +1,26 @@
+
+# Dependencies
+node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Generated and temporary files
+coverage/
+playwright-report/
+test-results/
+.DS_Store
+Thumbs.db
+
+# Local editor settings
+.vscode/
+
+# Local project inventory
+project-structure.txt

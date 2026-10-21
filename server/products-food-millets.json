@@ -1,0 +1,80 @@
+{
+  "website": "https://lepondykitchen.com/restaurant",
+  "vendor": "Food",
+  "category": "Millets",
+  "productCount": 8,
+  "products": [
+    {
+      "name": "Jowar Cholafal",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Millets",
+      "extractedAt": "2026-10-14T08:45:57.520Z"
+    },
+    {
+      "name": "Ragi Puttu",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Millets",
+      "extractedAt": "2026-10-14T08:45:57.520Z"
+    },
+    {
+      "name": "Little Millet Upma",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Millets",
+      "extractedAt": "2026-10-14T08:45:57.520Z"
+    },
+    {
+      "name": "Bajra Thalipeeth",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Millets",
+      "extractedAt": "2026-10-14T08:45:57.520Z"
+    },
+    {
+      "name": "Ragi Uppitu",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Millets",
+      "extractedAt": "2026-10-14T08:45:57.520Z"
+    },
+    {
+      "name": "Jowar Akki Roti",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Millets",
+      "extractedAt": "2026-10-14T08:45:57.520Z"
+    },
+    {
+      "name": "Ragi Ambali",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Millets",
+      "extractedAt": "2026-10-14T08:45:57.520Z"
+    },
+    {
+      "name": "Bajra Bhakri",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Millets",
+      "extractedAt": "2026-10-14T08:45:57.520Z"
+    }
+  ]
+}

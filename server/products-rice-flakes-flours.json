@@ -1,0 +1,35 @@
+{
+  "website": "https://lepondykitchen.com/restaurant",
+  "vendor": "Native Grocers LLC",
+  "category": "Rice Flakes & Flours",
+  "productCount": 3,
+  "products": [
+    {
+      "name": "SDPMart Mappillai Samba Rice Flakes",
+      "price": 4.49,
+      "previousPrice": 5.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Rice Flakes & Flours",
+      "extractedAt": "2026-10-13T09:58:56.924Z"
+    },
+    {
+      "name": "SDPMart Poongar Rice Puttu Flour",
+      "price": 4.99,
+      "previousPrice": 5.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Rice Flakes & Flours",
+      "extractedAt": "2026-10-13T09:58:56.924Z"
+    },
+    {
+      "name": "SDPMart Black Kavuni Rice Flakes",
+      "price": 4.99,
+      "previousPrice": 5.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Rice Flakes & Flours",
+      "extractedAt": "2026-10-13T09:58:56.924Z"
+    }
+  ]
+}

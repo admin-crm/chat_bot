@@ -1,0 +1,98 @@
+{
+  "website": "https://lepondykitchen.com/restaurant",
+  "vendor": "Native Grocers LLC",
+  "category": "Snacks",
+  "productCount": 10,
+  "products": [
+    {
+      "name": "Thattai",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z"
+    },
+    {
+      "name": "Poondu Murukku",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z"
+    },
+    {
+      "name": "Tapioca Finger Chips",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z"
+    },
+    {
+      "name": "Andhra Murukku",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z"
+    },
+    {
+      "name": "Kai Murukku",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z"
+    },
+    {
+      "name": "Kara Sev",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z"
+    },
+    {
+      "name": "Kara Boondi",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z"
+    },
+    {
+      "name": "Mini Murukku",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z"
+    },
+    {
+      "name": "Kara Mini Thattai",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z"
+    },
+    {
+      "name": "Nendhiram Chips",
+      "price": 2.99,
+      "previousPrice": 3.49,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Snacks",
+      "extractedAt": "2026-10-13T09:25:24.228Z"
+    }
+  ]
+}

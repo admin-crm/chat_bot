@@ -1,0 +1,83 @@
+
+{
+  "vendorName": "Native Grocers LLC",
+  "vendorType": "Grocery and household products",
+  "source": "Screen recording provided for the LePondy Kitchen demo",
+  "sourceObserved": true,
+  "catalogCountDisplayed": 106,
+  "openingHours": {
+    "opens": "9:00 AM",
+    "closes": "9:00 PM",
+    "verificationStatus": "Observed in recording; current hours not independently verified"
+  },
+  "contact": {
+    "phone": "+1 614-555-1985",
+    "verificationStatus": "Observed in recording; current contact details not independently verified"
+  },
+  "categories": [
+    "Snacks",
+    "Raw Millets",
+    "Dhal",
+    "Kitchen Equipments",
+    "Rice Flakes & Flour",
+    "Cold Pressed Oil",
+    "Cookies",
+    "Rice"
+  ],
+  "verifiedProducts": [
+    {
+      "name": "SDPMart Premium Kullakar Rice",
+      "price": 10.99,
+      "currency": "USD",
+      "priceStatus": "Displayed in recording; current price not independently verified"
+    },
+    {
+      "name": "SDPMart Kodo Millet",
+      "price": 2.49,
+      "currency": "USD",
+      "priceStatus": "Displayed in recording; current price not independently verified"
+    },
+    {
+      "name": "SDPMart Finger Millet Cookies",
+      "price": 5.99,
+      "currency": "USD",
+      "priceStatus": "Displayed in recording; current price not independently verified"
+    },
+    {
+      "name": "SDPMart Premium Chilli Powder",
+      "price": 3.49,
+      "currency": "USD",
+      "priceStatus": "Displayed in recording; current price not independently verified"
+    },
+    {
+      "name": "SDPMart Sona Masoori Rice",
+      "price": 4.49,
+      "currency": "USD",
+      "priceStatus": "Displayed in recording; current price not independently verified"
+    },
+    {
+      "name": "SDPMart Little Millet",
+      "price": 5.99,
+      "currency": "USD",
+      "priceStatus": "Displayed in recording; current price not independently verified"
+    },
+    {
+      "name": "SDPMart Little Millet Pasta",
+      "price": 3.99,
+      "currency": "USD",
+      "priceStatus": "Displayed in recording; current price not independently verified"
+    },
+    {
+      "name": "SDPMart Premium Moong Dhal",
+      "price": 3.49,
+      "currency": "USD",
+      "priceStatus": "Displayed in recording; current price not independently verified"
+    }
+  ],
+  "notes": [
+    "Product names, categories, prices, opening hours, and contact details are transcribed from the provided recording.",
+    "Prices are observed display values and have not been independently verified as current selling prices.",
+    "Do not invent prices, product details, or live stock availability.",
+    "Add more products only when their names and displayed prices can be read clearly from an authorized source."
+  ]
+}

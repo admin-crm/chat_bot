@@ -1,0 +1,62 @@
+{
+  "website": "https://lepondykitchen.com/restaurant",
+  "vendor": "Food",
+  "category": "Dosa",
+  "productCount": 6,
+  "products": [
+    {
+      "name": "Idiyappam",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Dosa",
+      "extractedAt": "2026-10-14T08:47:06.004Z"
+    },
+    {
+      "name": "Appam",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Dosa",
+      "extractedAt": "2026-10-14T08:47:06.004Z"
+    },
+    {
+      "name": "Plain/onion/egg dosa",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Dosa",
+      "extractedAt": "2026-10-14T08:47:06.004Z"
+    },
+    {
+      "name": "Masala dosa",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Dosa",
+      "extractedAt": "2026-10-14T08:47:06.004Z"
+    },
+    {
+      "name": "Kari dosa",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Dosa",
+      "extractedAt": "2026-10-14T08:47:06.004Z"
+    },
+    {
+      "name": "Cheese masala dosa",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Dosa",
+      "extractedAt": "2026-10-14T08:47:06.004Z"
+    }
+  ]
+}

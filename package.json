@@ -1,0 +1,22 @@
+
+{
+  "name": "universal-chatbot",
+  "version": "1.0.0",
+  "description": "Reusable website chatbot widget with an Express backend and local AI integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm --prefix server test"
+  },
+  "keywords": [
+    "chatbot",
+    "website-widget",
+    "express",
+    "ollama"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "playwright": "^1.64.1"
+  }
+}

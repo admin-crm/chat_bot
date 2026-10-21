@@ -1,0 +1,17 @@
+{
+  "website": "https://lepondykitchen.com/restaurant",
+  "vendor": "Native Grocers LLC",
+  "category": "Health Mix powder",
+  "productCount": 1,
+  "products": [
+    {
+      "name": "SDPMart Premium Health Mix Powder",
+      "price": 6.99,
+      "previousPrice": 7.99,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Native Grocers LLC",
+      "category": "Health Mix powder",
+      "extractedAt": "2026-10-13T10:42:41.363Z"
+    }
+  ]
+}

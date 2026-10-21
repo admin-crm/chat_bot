@@ -1,0 +1,62 @@
+{
+  "website": "https://lepondykitchen.com/restaurant",
+  "vendor": "Food",
+  "category": "Pulav",
+  "productCount": 6,
+  "products": [
+    {
+      "name": "Green Potato pulav",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Pulav",
+      "extractedAt": "2026-10-14T08:40:37.225Z"
+    },
+    {
+      "name": "Mutton White Pulav",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Pulav",
+      "extractedAt": "2026-10-14T08:40:37.225Z"
+    },
+    {
+      "name": "Coconut milk ghee pulav",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Pulav",
+      "extractedAt": "2026-10-14T08:40:37.225Z"
+    },
+    {
+      "name": "Chicken white pulav",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Pulav",
+      "extractedAt": "2026-10-14T08:40:37.225Z"
+    },
+    {
+      "name": "Seeraga Samba ghee pulav",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Pulav",
+      "extractedAt": "2026-10-14T08:40:37.225Z"
+    },
+    {
+      "name": "Egg pulav",
+      "price": null,
+      "previousPrice": null,
+      "source": "https://lepondykitchen.com/restaurant",
+      "vendor": "Food",
+      "category": "Pulav",
+      "extractedAt": "2026-10-14T08:40:37.225Z"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universal Chatbot Demo</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 100px auto;
+      padding: 24px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #1d4ed8;
+    }
+
+    p {
+      color: #64748b;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Universal Chatbot</h1>
+    <p>
+      This is our local demo website. Click the chat button
+      in the bottom-right corner to test our chatbot.
+    </p>
+  </main>
+
+  <universal-chatbot
+    data-api="http://localhost:5000/api/chat"
+    data-website-id="lepondy-kitchen"
+    data-title="Universal Assistant"
+    data-color="#2563eb"
+    data-welcome="Hi! Welcome to our demo. How can I help you?">
+  </universal-chatbot>
+
+  <script src="./widget/chat-widget.js"></script>
+</body>
+</html>

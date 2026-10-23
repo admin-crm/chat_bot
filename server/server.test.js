@@ -295,6 +295,77 @@ test("API limits explicit Native Grocers snack searches to Native Grocers snacks
   );
 });
 
+test("millet noodles queries match the Native Grocers category before generic millet matches", () => {
+  const matches = findCatalogMatchesByQuery(
+    "Do you have any millet noodles?",
+    allCatalog
+  );
+
+  const names = matches.map((product) => product.name);
+
+  assert.ok(matches.length > 0);
+  assert.ok(
+    names.some((name) => /millet noodles/i.test(name)),
+    "Expected Millet Noodles products to match"
+  );
+  assert.ok(
+    matches.every((product) => product.vendor === "Native Grocers LLC"),
+    "Expected millet noodles results to stay within Native Grocers"
+  );
+  assert.ok(
+    !names.some((name) => /cookies/i.test(name) || /food/i.test(name)),
+    "Expected no unrelated Food millet dishes or cookies in millet-noodles results"
+  );
+});
+
+test("API lists all available menu categories when asked explicitly", async () => {
+  const response = await request(app)
+    .post("/api/chat")
+    .send({
+      message: "Show me all available menu categories",
+      websiteId: "lepondy-kitchen"
+    })
+    .expect(200);
+
+  assert.equal(response.body.success, true);
+  assert.match(response.body.reply, /Available menu categories:/i);
+  assert.match(response.body.reply, /Food:/i);
+  assert.match(response.body.reply, /Native Grocers LLC:/i);
+  assert.match(response.body.reply, /Biriyani/i);
+  assert.match(response.body.reply, /Millet Noodles/i);
+  assert.doesNotMatch(response.body.reply, /Potato channa biryani/i);
+});
+
+test("API gives a natural catalog summary before asking which vendor to browse", async () => {
+  const response = await request(app)
+    .post("/api/chat")
+    .send({
+      message: "Hey! What kind of products do you sell?",
+      websiteId: "lepondy-kitchen"
+    })
+    .expect(200);
+
+  assert.equal(response.body.success, true);
+  assert.match(response.body.reply, /Food and Native Grocers LLC/i);
+  assert.match(response.body.reply, /restaurant dishes/i);
+  assert.match(response.body.reply, /grocery and household products/i);
+  assert.match(response.body.reply, /Which catalog would you like to browse/i);
+});
+
+test("API uses verified Veg categories for vegetarian queries and does not guess by name", async () => {
+  const response = await request(app)
+    .post("/api/chat")
+    .send({
+      message: "Do you have any vegetarian dishes?",
+      websiteId: "lepondy-kitchen"
+    })
+    .expect(200);
+
+  assert.equal(response.body.success, true);
+  assert.match(response.body.reply, /Verified vegetarian categories/i);
+  assert.match(response.body.reply, /Veg/i);
+  assert.match(response.body.reply, /explicitly labeled as Veg/i);
+});
 
 test("API returns relevant dessert products for a category search", async () => {
   const response = await request(app)

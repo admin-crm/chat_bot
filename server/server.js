@@ -138,6 +138,7 @@ const foodCatalogPath = path.join(
 );
 
 let extractedFoodCatalog;
+let pendingCategorySelection = null;
 
 try {
   extractedFoodCatalog = JSON.parse(
@@ -339,6 +340,13 @@ function findCatalogMatchesByQuery(message, products) {
       return category.includes("drink") || name.includes("tea") || name.includes("coffee") || name.includes("lassi");
     }
 
+    if (/\bmillet noodles?\b/.test(query)) {
+      return (
+        category.includes("millet noodles") ||
+        name.includes("millet noodles")
+      );
+    }
+
     if (/\b(millet|millets)\b/.test(query)) {
       return category.includes("millet") || name.includes("millet");
     }
@@ -466,6 +474,22 @@ function getLePondyCatalogProducts(vendorName) {
   }
 
   return [];
+}
+
+function getFoodCategoryNames() {
+  return [...new Set(
+    extractedFoodCatalog.products
+      .filter((product) => product.vendor === "Food" && product.category)
+      .map((product) => String(product.category).trim())
+  )].sort((left, right) => left.localeCompare(right));
+}
+
+function getNativeGrocersCategoryNames() {
+  return [...new Set(
+    extractedProductCatalog.products
+      .filter((product) => product.vendor === "Native Grocers LLC" && product.category)
+      .map((product) => String(product.category).trim())
+  )].sort((left, right) => left.localeCompare(right));
 }
 
 function findCrawledProductPrice(message, websiteId) {
@@ -878,6 +902,43 @@ if (matchedProduct) {
   const isVendorOnlySelection =
   /^(food|native grocers(?: llc)?)$/.test(normalizedMessage);
 
+  const asksForCatalogCategories =
+    /\b(show me all available menu categories|all available menu categories|available menu categories|show me all categories|menu categories)\b/.test(normalizedMessage);
+
+  if (websiteId === "lepondy-kitchen" && asksForCatalogCategories) {
+    pendingCategorySelection = "categories";
+
+    const foodCategories = getFoodCategoryNames();
+    const nativeCategories = getNativeGrocersCategoryNames();
+
+    return res.json({
+      success: true,
+      reply:
+        "Available menu categories:\n" +
+        `Food: ${foodCategories.join(", ")}\n` +
+        `Native Grocers LLC: ${nativeCategories.join(", ")}\n` +
+        "Which catalog would you like to browse?"
+    });
+  }
+
+  if (
+    websiteId === "lepondy-kitchen" &&
+    pendingCategorySelection === "categories" &&
+    selectedVendor &&
+    isVendorOnlySelection
+  ) {
+    pendingCategorySelection = null;
+
+    const categories = selectedVendor.name === "Food"
+      ? getFoodCategoryNames()
+      : getNativeGrocersCategoryNames();
+
+    return res.json({
+      success: true,
+      reply: `${selectedVendor.name} categories:\n${categories.join(", ")}`
+    });
+  }
+
 if (
   selectedVendor &&
   (
@@ -935,7 +996,7 @@ return `- ${displayName}${priceText}`;
   ) {
     return res.json({
       success: true,
-      reply: "We have two vendor catalogs here: Food and Native Grocers LLC. Which vendor would you like to browse?"
+      reply: "We offer two catalog types: Food and Native Grocers LLC. Food includes restaurant dishes and menu items, while Native Grocers LLC includes grocery and household products. Which catalog would you like to browse?"
     });
   }
 
@@ -1003,13 +1064,15 @@ if (
 
 if (
   websiteId === "lepondy-kitchen" &&
-  /\bwhat products do you sell\b|\bwhat products are available\b|\blist your products\b|\bshow me your products\b/i.test(userMessage) &&
+  /\bwhat kind of products do you sell\b|\bwhat kind of products are available\b|\bwhat kind of products do you offer\b|\bwhat products do you sell\b|\bwhat products are available\b|\blist your products\b|\bshow me your products\b/i.test(userMessage) &&
   !getVendorContext(userMessage)
 ) {
+  pendingCategorySelection = null;
+
   return res.json({
     success: true,
     reply:
-      "We have two vendor options: Food and Native Grocers LLC. Which vendor's products would you like to explore?"
+      "We offer two catalog types: Food and Native Grocers LLC. Food includes restaurant dishes and menu items, while Native Grocers LLC includes grocery and household products. Which catalog would you like to browse?"
   });
 }
 
@@ -1050,6 +1113,31 @@ if (
       "I have a Food product catalog, but I don't have enough verified category information to summarize it yet."
   });
 }
+
+  if (
+    websiteId === "lepondy-kitchen" &&
+    /\bvegetarian\b/i.test(normalizedMessage)
+  ) {
+    const verifiedVegCategories = getFoodCategoryNames().filter(
+      (category) => /^veg\b/i.test(category)
+    );
+
+    if (verifiedVegCategories.length > 0) {
+      return res.json({
+        success: true,
+        reply:
+          "Verified vegetarian categories in the Food catalog: " +
+          verifiedVegCategories.join(", ") +
+          ". I can only confirm vegetarian items from categories explicitly labeled as Veg; I do not classify dishes as vegetarian based only on their names."
+      });
+    }
+
+    return res.json({
+      success: true,
+      reply:
+        "The current catalog does not provide a verified vegetarian flag for individual dishes. I can only confirm vegetarian items from categories explicitly labeled as Veg."
+    });
+  }
   const groceryCatalogProducts = extractedProductCatalog.products.filter(
     (product) => product.vendor === "Native Grocers LLC"
   );
@@ -1082,9 +1170,25 @@ const categoryMatches = findCatalogMatchesByQuery(
       .slice(0, 12)
       .join("\n");
 
-    const heading = /\b(snack|snacks|crunchy|crispy|savory)\b/.test(normalizedQuery)
-      ? "Matching snack products in the catalog:"
-      : "Food items in this category:";
+    const isSnackQuery =
+  /\b(snack|snacks|crunchy|crispy|savory)\b/.test(normalizedQuery);
+
+const hasFoodMatches = categoryMatches.some(
+  (product) => product.vendor === "Food"
+);
+
+const hasGroceryMatches = categoryMatches.some(
+  (product) => product.vendor === "Native Grocers LLC"
+);
+
+const isMilletNoodlesQuery =
+  /\bmillet noodles?\b/.test(normalizedQuery);
+
+const heading = isSnackQuery
+  ? "Matching snack products in the catalog:"
+  : isMilletNoodlesQuery && hasGroceryMatches
+    ? "Native Grocers LLC products in this category:"
+    : "Food items in this category:";
 
     return res.json({
       success: true,

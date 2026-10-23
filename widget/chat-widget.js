@@ -163,6 +163,42 @@ class UniversalChatbot extends HTMLElement {
           cursor: pointer;
         }
 
+.category-nav {
+  display: flex;
+  gap: 16px;
+  padding: 11px 16px;
+  overflow-x: auto;
+  white-space: nowrap;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  scrollbar-width: none;
+}
+
+.category-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.category-link {
+  flex-shrink: 0;
+  padding: 3px 0;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: #2563eb;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.category-link:hover,
+.category-link:focus-visible {
+  color: #1d4ed8;
+  border-bottom-color: #2563eb;
+  outline: none;
+}
+
+
         .icon-button:hover { background: #ffffff20; }
 
         .welcome-panel {
@@ -419,7 +455,23 @@ class UniversalChatbot extends HTMLElement {
           </div>
         </header>
 
+        <nav class="category-nav" aria-label="Menu categories">
+          <button class="category-link" type="button"
+            data-category="Appetisers">Appetisers</button>
+          <button class="category-link" type="button"
+            data-category="Biriyanis">Biriyanis</button>
+          <button class="category-link" type="button"
+            data-category="Desserts">Desserts</button>
+          <button class="category-link" type="button"
+            data-category="Dosa">Dosa</button>
+          <button class="category-link" type="button"
+            data-category="Drinks">Drinks</button>
+          <button class="category-link" type="button"
+            data-category="More">More</button>
+        </nav>
+
         <div class="welcome-panel">
+
           <p class="welcome-title">How can I help you?</p>
           <p class="welcome-description">
             Ask a question and I'll do my best to help.
@@ -484,6 +536,28 @@ class UniversalChatbot extends HTMLElement {
       input.value = "";
       input.focus();
     });
+
+
+    root.querySelectorAll(".category-link").forEach((button) => {
+      button.addEventListener("click", () => {
+        if (this.busy) return;
+
+        const category = button.dataset.category;
+
+        const prompts = {
+          Appetisers: "Show me the available appetizers",
+          Biriyanis: "Show me the available biriyani menu items",
+          Desserts: "Show me the available desserts",
+          Dosa: "Show me the available dosa items",
+          Drinks: "Show me the available drinks",
+          More: "Show me all available menu categories"
+        };
+
+        input.value = prompts[category] || category;
+        form.requestSubmit();
+      });
+    });
+
 
     root.querySelectorAll(".quick-prompt").forEach((button) => {
       button.addEventListener("click", () => {

@@ -11,11 +11,6 @@ require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const OLLAMA_URL =
-  process.env.OLLAMA_URL || "http://localhost:11434/api/chat";
-
-const MODEL_NAME =
-  process.env.MODEL_NAME || "qwen2.5:1.5b";
 
 // Middleware
 app.use(cors());
@@ -74,7 +69,8 @@ function loadWebsiteKnowledge(websiteId) {
       },
       instructions: {
         rules: [
-          "Answer using the saved crawled website information.",
+          "Use the saved crawled website information only for questions about this website, its products, prices, or business details.",
+          "For general questions unrelated to this website, answer normally without claiming the website has verified information on that topic.",
           "Do not invent product prices or business details."
         ]
       },
@@ -979,6 +975,51 @@ return `- ${displayName}${priceText}`;
     });
   }
 
+  const asksForFoodMenuProducts =
+    websiteId === "lepondy-kitchen" &&
+    !selectedVendor &&
+    /\bmenu\b/.test(normalizedMessage) &&
+    /\b(products?|items?)\b/.test(normalizedMessage) &&
+    !/\b(native grocers(?: llc)?|grocery|groceries)\b/.test(normalizedMessage);
+
+  const asksForGroceryProducts =
+    websiteId === "lepondy-kitchen" &&
+    !selectedVendor &&
+    /\b(native grocers(?: llc)?|grocery|groceries)\b/.test(normalizedMessage) &&
+    /\b(products?|items?)\b/.test(normalizedMessage);
+
+  if (asksForFoodMenuProducts || asksForGroceryProducts) {
+    const vendorName = asksForFoodMenuProducts ? "Food" : "Native Grocers LLC";
+    const products = getLePondyCatalogProducts(vendorName);
+
+    if (products.length === 0) {
+      return res.json({
+        success: true,
+        reply: `Products recorded for ${vendorName}:\nNo products found for this vendor.\n\nThese products were extracted from the website catalog and may not reflect current availability or prices.`
+      });
+    }
+
+    const productList = products
+      .map((product) => {
+        const priceText =
+          typeof product.price === "number" && Number.isFinite(product.price)
+            ? ` ($${product.price.toFixed(2)})`
+            : "";
+
+        const displayName = String(product.name || "")
+          .trim()
+          .replace(/\s+/g, " ");
+
+        return `- ${displayName}${priceText}`;
+      })
+      .join("\n");
+
+    return res.json({
+      success: true,
+      reply: `Products recorded for ${vendorName}:\n${productList}\n\nThese products were extracted from the website catalog and may not reflect current availability or prices.`
+    });
+  }
+
   // Handle general product-listing questions without requiring a vendor name.
   const asksForProducts =
     /\b(list|show|display|give|browse|find|see|what|which)\b/.test(normalizedMessage) &&
@@ -1281,36 +1322,41 @@ ${knowledgeContext}
 
 
   try {
-    const response = await fetch(OLLAMA_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        model: MODEL_NAME,
-        messages: [
-          {
-            role: "system",
-            content: systemPrompt
+    const apiKey = process.env.GEMINI_API_KEY;
+    const model = process.env.GEMINI_MODEL || "gemini-3.5-flash-lite";
+
+    if (!apiKey) {
+      throw new Error("GEMINI_API_KEY is not configured.");
+    }
+
+    const response = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-goog-api-key": apiKey
+        },
+        body: JSON.stringify({
+          systemInstruction: {
+            parts: [{ text: systemPrompt }]
           },
-          {
-            role: "user",
-            content: userMessage
-          }
-        ],
-        stream: false,
-        options: {
-          temperature: 0
-        }
-      }),
-      signal: AbortSignal.timeout(60000)
-    });
+          contents: [
+            {
+              role: "user",
+              parts: [{ text: userMessage }]
+            }
+          ]
+        }),
+        signal: AbortSignal.timeout(60000)
+      }
+    );
 
     if (!response.ok) {
       const errorText = await response.text();
 
       console.error(
-        "Ollama API error:",
+        "Gemini API error:",
         response.status,
         errorText
       );
@@ -1323,10 +1369,14 @@ ${knowledgeContext}
     }
 
     const data = await response.json();
-    const reply = data.message?.content?.trim();
+
+    const reply = data.candidates?.[0]?.content?.parts
+      ?.map((part) => part.text || "")
+      .join("")
+      .trim();
 
     if (!reply) {
-      throw new Error("Ollama returned an empty reply.");
+      throw new Error("Gemini returned an empty reply.");
     }
 
     return res.json({
@@ -1339,10 +1389,10 @@ ${knowledgeContext}
     return res.status(503).json({
       success: false,
       message:
-        "The AI assistant is temporarily unavailable. Check that Ollama is running and the model is installed."
+        "The AI assistant is temporarily unavailable. Please try again shortly."
     });
-  }
-});
+  }});
+
 
 // Basic public-IP check for the local crawler prototype.
 // This is not a complete production SSRF defense.
@@ -1899,7 +1949,6 @@ if (require.main === module) {
       `Universal Chatbot API running at http://localhost:${PORT}`
     );
     console.log(`Business loaded: ${businessData.businessName}`);
-    console.log(`Ollama model: ${MODEL_NAME}`);
     console.log(
       "Food products loaded:",
       foodData.verifiedProducts?.length ?? 0

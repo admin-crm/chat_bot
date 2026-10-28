@@ -106,6 +106,56 @@ test("saved crawled product data returns the exact laptop price for a direct pro
 });
 
 
+test("API answers general non-business questions without being blocked by saved crawled-website instructions", async (t) => {
+  const originalApiKey = process.env.GEMINI_API_KEY;
+  const originalFetch = global.fetch;
+
+  t.after(() => {
+    if (originalApiKey === undefined) {
+      delete process.env.GEMINI_API_KEY;
+    } else {
+      process.env.GEMINI_API_KEY = originalApiKey;
+    }
+
+    if (originalFetch === undefined) {
+      delete global.fetch;
+    } else {
+      global.fetch = originalFetch;
+    }
+  });
+
+  process.env.GEMINI_API_KEY = "test-api-key";
+  global.fetch = async () => ({
+    ok: true,
+    json: async () => ({
+      candidates: [
+        {
+          content: {
+            parts: [
+              {
+                text: "Artificial intelligence allows computers to perform tasks that usually require human intelligence."
+              }
+            ]
+          }
+        }
+      ]
+    })
+  });
+
+  const response = await request(app)
+    .post("/api/chat")
+    .send({
+      message: "Explain what artificial intelligence is in simple words",
+      websiteId: "testingurl-demo"
+    })
+    .expect(200);
+
+  assert.equal(response.body.success, true);
+  assert.match(response.body.reply, /artificial intelligence|AI/i);
+  assert.doesNotMatch(response.body.reply, /saved crawled website information|do not have confirmed information/i);
+});
+
+
 test("API returns Native Grocers product price and previous price", async () => {
   const response = await request(app)
     .post("/api/chat")
@@ -243,6 +293,51 @@ test("API lists Native Grocers products for a standalone vendor selection", asyn
   );
 });
 
+test("API lists Food menu products for a menu-only request without an explicit vendor", async () => {
+  const expectedProduct = foodCatalog.find((product) => product.name);
+
+  assert.ok(expectedProduct, "Expected at least one Food product");
+
+  const response = await request(app)
+    .post("/api/chat")
+    .send({
+      message: "List all menu products",
+      websiteId: "lepondy-kitchen"
+    })
+    .expect(200);
+
+  assert.equal(response.body.success, true);
+  assert.match(response.body.reply, /Products recorded for Food/i);
+  assert.ok(
+    response.body.reply.includes(expectedProduct.name),
+    `Expected Food menu product "${expectedProduct.name}" in the reply`
+  );
+  assert.doesNotMatch(response.body.reply, /Products recorded for Native Grocers LLC/i);
+});
+
+test("API lists Native Grocers grocery products for a grocery-only request without an explicit vendor", async () => {
+  const expectedProduct = allCatalog.find(
+    (product) => product.vendor === "Native Grocers LLC"
+  );
+
+  assert.ok(expectedProduct, "Expected at least one Native Grocers product");
+
+  const response = await request(app)
+    .post("/api/chat")
+    .send({
+      message: "List all grocery products",
+      websiteId: "lepondy-kitchen"
+    })
+    .expect(200);
+
+  assert.equal(response.body.success, true);
+  assert.match(response.body.reply, /Products recorded for Native Grocers LLC/i);
+  assert.ok(
+    response.body.reply.includes(expectedProduct.name),
+    `Expected grocery product "${expectedProduct.name}" in the reply`
+  );
+  assert.doesNotMatch(response.body.reply, /Products recorded for Food/i);
+});
 
 
 test("API limits explicit Food dessert searches to Food catalog products", async () => {

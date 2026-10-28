@@ -1944,7 +1944,7 @@ app.use((error, req, res, next) => {
 });
 
 if (require.main === module) {
-  app.listen(PORT, () => {
+  app.listen(PORT, "127.0.0.1", () => {
     console.log(
       `Universal Chatbot API running at http://localhost:${PORT}`
     );

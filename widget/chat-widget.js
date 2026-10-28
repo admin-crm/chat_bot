@@ -21,7 +21,7 @@ class UniversalChatbot extends HTMLElement {
     this.logo = this.getAttribute("data-logo") || "";
     this.apiUrl =
       this.getAttribute("data-api") ||
-      "http://localhost:5000/api/chat";
+      "/api/chat";
     this.busy = false;
   }
 
@@ -701,7 +701,7 @@ if (!customElements.get("universal-chatbot")) {
       data-title="${script.getAttribute("data-title") || "Universal Assistant"}"
       data-color="${script.getAttribute("data-color") || "#2563eb"}"
       data-welcome="${script.getAttribute("data-welcome") || "Hi! I'm your AI assistant. How can I help you today?"}"
-      data-api="${script.getAttribute("data-api") || "http://localhost:5000/api/chat"}">
+      data-api="${script.getAttribute("data-api") || "/api/chat"}">
     </universal-chatbot>
   `;
 

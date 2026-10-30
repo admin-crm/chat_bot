@@ -371,6 +371,179 @@ function findCatalogMatchesByQuery(message, products) {
   });
 }
 
+
+
+function retrieveCatalogProducts(message) {
+  const query = normalizeText(message || "");
+
+  if (!query || isBusinessInformationRequest(query)) {
+    return [];
+  }
+
+  const allProducts = [
+    ...extractedFoodCatalog.products.filter(
+      (product) => product.vendor === "Food"
+    ),
+    ...extractedProductCatalog.products.filter(
+      (product) => product.vendor === "Native Grocers LLC"
+    )
+  ];
+
+  // Apply an explicit vendor restriction when requested.
+  let products = allProducts;
+
+  if (/\bnative grocers(?: llc)?\b/.test(query)) {
+    products = products.filter(
+      (product) => product.vendor === "Native Grocers LLC"
+    );
+  } else if (
+    /\bfrom food\b|\bfood vendor\b|\bfood catalog\b/.test(query)
+  ) {
+    products = products.filter(
+      (product) => product.vendor === "Food"
+    );
+  }
+
+  // Build independent filters so multiple conditions are applied together.
+  const filters = [];
+
+  if (/\b(snack|snacks|crunchy|crispy|savory)\b/.test(query)) {
+    filters.push((product) => {
+      const name = normalizeText(product.name || "");
+      const category = normalizeText(product.category || "");
+
+      return category === "snacks" ||
+        [
+          "thattai",
+          "murukku",
+          "sev",
+          "chips",
+          "boondi",
+          "kara",
+          "mixture"
+        ].some((term) => name.includes(term));
+    });
+  }
+
+  if (/\b(dessert|desserts|sweet|sweets)\b/.test(query)) {
+    filters.push((product) => {
+      const name = normalizeText(product.name || "");
+      const category = normalizeText(product.category || "");
+
+      return category === "desserts" ||
+        [
+          "halwa",
+          "rasamalai",
+          "payasam",
+          "ladoo",
+          "jalebi",
+          "kulfi"
+        ].some((term) => name.includes(term));
+    });
+  }
+
+  if (/\b(biryani|biriyani)\b/.test(query)) {
+    filters.push((product) => {
+      const name = normalizeText(product.name || "");
+      const category = normalizeText(product.category || "");
+
+      return name.includes("biryani") ||
+        name.includes("biriyani") ||
+        category.includes("biryani") ||
+        category.includes("biriyani");
+    });
+  }
+
+  if (/\bmillet noodles?\b/.test(query)) {
+    filters.push((product) => {
+      const name = normalizeText(product.name || "");
+      const category = normalizeText(product.category || "");
+
+      return name.includes("millet noodles") ||
+        category.includes("millet noodles");
+    });
+  } else if (/\b(millet|millets)\b/.test(query)) {
+    filters.push((product) => {
+      const name = normalizeText(product.name || "");
+      const category = normalizeText(product.category || "");
+
+      return name.includes("millet") ||
+        category.includes("millet");
+    });
+  }
+
+  if (/\b(drink|drinks|beverage|beverages)\b/.test(query)) {
+    filters.push((product) => {
+      const name = normalizeText(product.name || "");
+      const category = normalizeText(product.category || "");
+
+      return category.includes("drink") ||
+        ["tea", "coffee", "lassi"].some((term) =>
+          name.includes(term)
+        );
+    });
+  }
+
+  if (/\b(dosa|dosas)\b/.test(query)) {
+    filters.push((product) => {
+      const name = normalizeText(product.name || "");
+      const category = normalizeText(product.category || "");
+
+      return name.includes("dosa") || category.includes("dosa");
+    });
+  }
+
+  if (/\b(rotti|rotis)\b/.test(query)) {
+    filters.push((product) => {
+      const name = normalizeText(product.name || "");
+      const category = normalizeText(product.category || "");
+
+      return name.includes("rotti") || category.includes("rotti");
+    });
+  }
+
+  if (/\b(pulav|pulao|pilaf)\b/.test(query)) {
+    filters.push((product) => {
+      const name = normalizeText(product.name || "");
+      const category = normalizeText(product.category || "");
+
+      return ["pulav", "pulao"].some(
+        (term) => name.includes(term) || category.includes(term)
+      );
+    });
+  }
+
+  if (/\b(curry|curries)\b/.test(query)) {
+    filters.push((product) => {
+      const name = normalizeText(product.name || "");
+      const category = normalizeText(product.category || "");
+
+      return name.includes("curry") || category.includes("curry");
+    });
+  }
+
+  if (/\b(appetizer|appetizers|starter|starters)\b/.test(query)) {
+    filters.push((product) => {
+      const name = normalizeText(product.name || "");
+      const category = normalizeText(product.category || "");
+
+      return category.includes("appetizer") ||
+        category.includes("starter");
+    });
+  }
+
+  // If no supported category was detected, preserve the existing matcher.
+  if (filters.length === 0) {
+    return findCatalogMatchesByQuery(query, products);
+  }
+
+  // Every requested condition must match the same product.
+  return products.filter((product) =>
+    filters.every((filter) => filter(product))
+  );
+}
+
+
 function getVendorContext(message) {
   const question = normalizeText(message);
 
@@ -786,11 +959,50 @@ if (!websiteConfig) {
 
 
   // Answer Native Grocers product-price questions directly from the catalog.
-  if (
-    websiteId === "lepondy-kitchen" &&
-    selectedVendor?.name === "Native Grocers LLC" &&
-    /\b(price|cost|how much)\b/i.test(userMessage)
-  ) {
+    const isNonVegetarianQuery =
+    /\bnon[\s-]?veg(?:etarian)?\b/i.test(userMessage);
+
+  const isVegetarianQuery =
+    !isNonVegetarianQuery &&
+    /\bvegetarian\b|\bveg\b/i.test(userMessage);
+
+  if (websiteId === "lepondy-kitchen" && (isVegetarianQuery || isNonVegetarianQuery)) {
+    const requiredCategoryPattern = isNonVegetarianQuery
+      ? /^non[\s-]?veg\b/i
+      : /^veg\b/i;
+
+    const dietaryProducts = extractedFoodCatalog.products.filter(
+  (product) =>
+    product.vendor === "Food" &&
+    product.category &&
+    requiredCategoryPattern.test(product.category.trim())
+);
+
+    const heading = isNonVegetarianQuery
+  ? "Verified non-vegetarian categories in the Food catalog:"
+  : "Verified vegetarian categories in the Food catalog:";
+
+    if (dietaryProducts.length > 0) {
+      return res.json({
+        success: true,
+        reply:
+  heading +
+  "\nI can only confirm items from categories explicitly labeled as " +
+  (isNonVegetarianQuery ? "Non-Veg." : "Veg.") +
+  "\n" +
+  dietaryProducts.map((product) => `- ${product.name}`).join("\n")
+      });
+    }
+
+    return res.json({
+      success: true,
+      reply: isNonVegetarianQuery
+        ? "I couldn't find products in explicitly labeled non-vegetarian categories."
+        : "I couldn't find products in explicitly labeled vegetarian categories."
+    });
+  }
+
+  {
     const catalogProducts = extractedProductCatalog.products.filter(
       (product) => product.vendor === "Native Grocers LLC"
     );
@@ -1200,52 +1412,51 @@ if (
       ...groceryCatalogProducts
     ];
 
-const categoryMatches = findCatalogMatchesByQuery(
-  normalizedQuery,
-  categoryProducts
+const categoryMatches = retrieveCatalogProducts(userMessage).filter(
+  (product) =>
+    !selectedVendor || product.vendor === selectedVendor.name
 );
 
-  if (normalizedQuery && categoryMatches.length > 0) {
-    const categoryList = categoryMatches
-      .map((product) => `- ${product.name}`)
-      .slice(0, 12)
-      .join("\n");
+if (normalizedQuery && categoryMatches.length > 0) {
+  const isAllProductsQuery =
+    /\b(all|every|entire|complete)\b/i.test(userMessage);
 
-    const isSnackQuery =
-  /\b(snack|snacks|crunchy|crispy|savory)\b/.test(normalizedQuery);
+  const productsToShow = isAllProductsQuery
+    ? categoryMatches
+    : categoryMatches.slice(0, 12);
 
-const hasFoodMatches = categoryMatches.some(
-  (product) => product.vendor === "Food"
-);
+  const categoryList = productsToShow
+    .map((product) => `- ${product.name}`)
+    .join("\n");
 
-const hasGroceryMatches = categoryMatches.some(
-  (product) => product.vendor === "Native Grocers LLC"
-);
+  const hasFoodMatches = categoryMatches.some(
+    (product) => product.vendor === "Food"
+  );
 
-const isMilletNoodlesQuery =
-  /\bmillet noodles?\b/.test(normalizedQuery);
+  const hasGroceryMatches = categoryMatches.some(
+    (product) => product.vendor === "Native Grocers LLC"
+  );
 
-const heading = isSnackQuery
-  ? "Matching snack products in the catalog:"
-  : isMilletNoodlesQuery && hasGroceryMatches
-    ? "Native Grocers LLC products in this category:"
-    : "Food items in this category:";
+  const isSnackQuery =
+    /\b(snack|snacks|crunchy|crispy|savory)\b/i.test(normalizedQuery);
 
-    return res.json({
-      success: true,
-      reply: `${heading}\n${categoryList}`
-    });
-  }
+  let heading;
+
+  if (isSnackQuery) {
+  heading = "Matching snack products in the catalog:";
+} else if (hasFoodMatches && hasGroceryMatches) {
+  heading = "Food items in this category:\nAlso matching Native Grocers LLC products:";
+} else if (hasGroceryMatches) {
+  heading = "Native Grocers LLC products in this category:";
+} else {
+  heading = "Food items in this category:";
 }
 
-const missingInformationReply =
-  getMissingInformationReply(userMessage, selectedBusinessData);
-
-if (missingInformationReply) {
   return res.json({
     success: true,
-    reply: missingInformationReply
+    reply: `${heading}\n${categoryList}`
   });
+}
 }
 
 const selectedKnowledge = selectedBusinessData.knowledge || {};
@@ -1264,6 +1475,9 @@ const lePondyVerifiedFacts = websiteId === "lepondy-kitchen"
   ? getLePondyVerifiedFacts()
   : null;
 
+const retrievedCatalogProducts = websiteId === "lepondy-kitchen"
+  ? retrieveCatalogProducts(userMessage)
+  : [];
 
 const knowledgeContext = JSON.stringify(
   {
@@ -1280,7 +1494,8 @@ const knowledgeContext = JSON.stringify(
                   vendorName: vendorContext.name,
                   ...vendorContext.data
                 }
-              : null
+              : null,
+              relevantCatalogProducts: retrievedCatalogProducts
           }
         : selectedBusinessData,
 
@@ -1391,7 +1606,8 @@ ${knowledgeContext}
       message:
         "The AI assistant is temporarily unavailable. Please try again shortly."
     });
-  }});
+  }
+});
 
 
 // Basic public-IP check for the local crawler prototype.
@@ -1966,6 +2182,7 @@ module.exports = {
   normalizeText,
   getMissingInformationReply,
   findCatalogMatchesByQuery,
+  retrieveCatalogProducts,
   getVendorContext,
   findCrawledProductPrice
 };

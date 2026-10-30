@@ -5,10 +5,10 @@ const request = require("supertest");
 const {
   app,
   findCatalogMatchesByQuery,
+  retrieveCatalogProducts,
   getMissingInformationReply,
   findCrawledProductPrice
 } = require("./server.js");
-
 
 const nativeGrocerSnacks = require("./products-all.json").products.filter(
   (product) => product.vendor === "Native Grocers LLC" && product.category === "Snacks"
@@ -506,4 +506,44 @@ test("API returns at most 12 biryani products for a category search", async () =
     productLines.every((line) => /\bbiryani\b/i.test(line)),
     "Expected every listed product to match the biryani category"
   );
+});
+
+
+
+
+test("catalog retrieval returns matching biryani products from both catalogs", () => {
+  const results = retrieveCatalogProducts("show me biryani products");
+
+  assert.equal(results.length, 18);
+
+  assert.ok(
+    results.some((product) => product.vendor === "Food")
+  );
+
+  assert.ok(
+    results.some((product) => product.vendor === "Native Grocers LLC")
+  );
+
+  assert.ok(
+    results.every((product) =>
+      /biryani|biriyani/i.test(product.name)
+    )
+  );
+});
+
+
+test("catalog retrieval does not classify millet cookies as snacks without verified category data", () => {
+  const results = retrieveCatalogProducts("show me millet snacks");
+
+  assert.deepEqual(results, []);
+});
+
+test("catalog retrieval does not return products for business information questions", () => {
+  const results = retrieveCatalogProducts("What are your delivery policies?");
+
+  assert.deepEqual(results, []);
+});
+
+test("catalog retrieval returns an empty array for an empty question", () => {
+  assert.deepEqual(retrieveCatalogProducts(""), []);
 });

@@ -455,21 +455,22 @@ class UniversalChatbot extends HTMLElement {
           </div>
         </header>
 
-        <nav class="category-nav" aria-label="Menu categories">
-          <button class="category-link" type="button"
-            data-category="Appetisers">Appetisers</button>
-          <button class="category-link" type="button"
-            data-category="Biriyanis">Biriyanis</button>
-          <button class="category-link" type="button"
-            data-category="Desserts">Desserts</button>
-          <button class="category-link" type="button"
-            data-category="Dosa">Dosa</button>
-          <button class="category-link" type="button"
-            data-category="Drinks">Drinks</button>
-          <button class="category-link" type="button"
-            data-category="More">More</button>
-        </nav>
-
+        ${this.websiteId === "lepondy-kitchen" ? `
+  <nav class="category-nav" aria-label="Menu categories">
+    <button class="category-link" type="button"
+      data-category="Appetisers">Appetisers</button>
+    <button class="category-link" type="button"
+      data-category="Biriyanis">Biriyanis</button>
+    <button class="category-link" type="button"
+      data-category="Desserts">Desserts</button>
+    <button class="category-link" type="button"
+      data-category="Dosa">Dosa</button>
+    <button class="category-link" type="button"
+      data-category="Drinks">Drinks</button>
+    <button class="category-link" type="button"
+      data-category="More">More</button>
+  </nav>
+` : ""}
         <div class="welcome-panel">
 
           <p class="welcome-title">How can I help you?</p>
@@ -701,7 +702,7 @@ if (!customElements.get("universal-chatbot")) {
       data-title="${script.getAttribute("data-title") || "Universal Assistant"}"
       data-color="${script.getAttribute("data-color") || "#2563eb"}"
       data-welcome="${script.getAttribute("data-welcome") || "Hi! I'm your AI assistant. How can I help you today?"}"
-      data-api="${script.getAttribute("data-api") || "/api/chat"}">
+      data-api="${script.getAttribute("data-api") || "/api/chat"}"
     </universal-chatbot>
   `;
 

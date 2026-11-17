@@ -38,6 +38,12 @@ const websiteConfigs = {
   businessName: "TestingURL Demo",
   businessType: "E-commerce Demo",
   websiteUrl: "https://testingurl.dev"
+},
+
+  "srg-tech": {
+  businessName: "SRG Tech",
+  businessType: "AI and technology solutions",
+  websiteUrl: "https://srg.cbeezai.com/"
 }
 };
 
@@ -61,9 +67,10 @@ function loadWebsiteKnowledge(websiteId) {
     }
 
     return {
-      businessName: config.businessName,
-      businessType: config.businessType,
-      websiteUrl: config.websiteUrl,
+  websiteId,
+  businessName: config.businessName,
+  businessType: config.businessType,
+  websiteUrl: config.websiteUrl,
       knowledge: {
         description: `This chatbot uses crawled information from ${config.websiteUrl}.`
       },
@@ -532,6 +539,15 @@ function retrieveCatalogProducts(message) {
     });
   }
 
+  const explicitCategoryQuery =
+    /\b(biryani|biriyani|dessert|desserts|sweet|sweets|drink|drinks|beverage|beverages|dosa|dosas|rotti|rotis|millet|millets|curry|curries|pulav|pulao|appetizer|appetizers|starter|starters|snack|snacks)\b/.test(query);
+
+  if (explicitCategoryQuery && filters.length > 0) {
+    return products.filter((product) =>
+      filters.every((filter) => filter(product))
+    );
+  }
+
   // If no supported category was detected, preserve the existing matcher.
   if (filters.length === 0) {
     return findCatalogMatchesByQuery(query, products);
@@ -925,6 +941,69 @@ function loadCrawledWebsiteData(websiteId) {
   }
 }
 
+
+function retrieveRelevantWebsitePages(message, crawledWebsiteData, limit = 4) {
+  if (
+    !crawledWebsiteData ||
+    !Array.isArray(crawledWebsiteData.pages) ||
+    crawledWebsiteData.pages.length === 0
+  ) {
+    return [];
+  }
+
+  const query = normalizeText(message);
+
+  if (!query) return [];
+
+  const stopWords = new Set([
+    "the", "is", "are", "was", "were", "what", "which",
+    "who", "how", "why", "when", "where", "can", "could",
+    "would", "should", "tell", "me", "about", "please",
+    "your", "you", "for", "and", "or", "to", "of", "in",
+    "on", "a", "an", "do", "does", "we", "our", "i"
+  ]);
+
+  const queryWords = [...new Set(
+    query.split(" ").filter(
+      word => word.length > 1 && !stopWords.has(word)
+    )
+  )];
+
+  if (queryWords.length === 0) return [];
+
+  const scoredPages = crawledWebsiteData.pages.map(page => {
+    const title = normalizeText(page.title || "");
+    const url = normalizeText(
+      (page.url || "").replace(/https?:\/\//g, " ").replace(/[\/_-]/g, " ")
+    );
+    const pageText = normalizeText(page.text || "");
+
+    let score = 0;
+
+    for (const word of queryWords) {
+      if (title.includes(word)) score += 8;
+      if (url.includes(word)) score += 6;
+
+      const matches = pageText.split(word).length - 1;
+      score += Math.min(matches, 5);
+    }
+
+    return { page, score };
+  });
+
+  return scoredPages
+    .filter(item => item.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map(item => ({
+      url: item.page.url,
+      title: item.page.title,
+      text: item.page.text,
+      products: item.page.products || []
+    }));
+}
+
+
 // Chatbot endpoint
 app.post("/api/chat", async (req, res) => {
 
@@ -1157,7 +1236,26 @@ if (
     )
   )
 ) {
-    const products = getLePondyCatalogProducts(selectedVendor.name);
+    const isExplicitCategoryQuery =
+  /\b(biryani|biriyani|dessert|desserts|sweet|sweets|dosa|dosas|drink|drinks|beverage|beverages|appetizer|appetizers|appetiser|appetisers|starter|starters|snack|snacks|millet|millets|curry|curries|pulav|pulao|rotti|rotis)\b/.test(
+    normalizedMessage
+  );
+
+
+console.log("CATEGORY DEBUG:", {
+  message: userMessage,
+  selectedVendor: selectedVendor.name,
+  isExplicitCategoryQuery,
+  filteredCount: retrieveCatalogProducts(userMessage).filter(
+    (product) => product.vendor === selectedVendor.name
+  ).length
+});
+
+const products = isExplicitCategoryQuery
+  ? retrieveCatalogProducts(userMessage).filter(
+      (product) => product.vendor === selectedVendor.name
+    )
+  : getLePondyCatalogProducts(selectedVendor.name);
 
     if (products.length === 0) {
       return res.json({
@@ -1294,8 +1392,14 @@ if (crawledProductMatch) {
   });
 }
 
-if (isBusinessInformationRequest(userMessage)) {
-  const businessReply = getMissingInformationReply(userMessage, selectedBusinessData);
+if (
+  websiteId === "lepondy-kitchen" &&
+  isBusinessInformationRequest(userMessage)
+) {
+  const businessReply = getMissingInformationReply(
+    userMessage,
+    selectedBusinessData
+  );
 
   if (businessReply) {
     return res.json({
@@ -1479,6 +1583,20 @@ const retrievedCatalogProducts = websiteId === "lepondy-kitchen"
   ? retrieveCatalogProducts(userMessage)
   : [];
 
+const isExplicitCategoryRequest =
+  websiteId === "lepondy-kitchen" &&
+  /\b(biryani|biriyani|dessert|desserts|sweet|sweets|drink|drinks|beverage|beverages|dosa|dosas|rotti|rotis|millet|millets|curry|curries|pulav|pulao|appetizer|appetizers|starter|starters|snack|snacks)\b/.test(normalizedMessage);
+
+
+const retrievedWebsitePages =
+  websiteId !== "lepondy-kitchen"
+    ? retrieveRelevantWebsitePages(
+        userMessage,
+        crawledWebsiteData,
+        4
+      )
+    : [];
+
 const knowledgeContext = JSON.stringify(
   {
     businessKnowledge:
@@ -1487,33 +1605,40 @@ const knowledgeContext = JSON.stringify(
             lePondyKitchen: {
               ...lePondyVerifiedFacts
             },
-            foodVendor: foodData,
-            nativeGrocers: nativeGrocersData,
+            ...(isExplicitCategoryRequest
+              ? {}
+              : {
+                  foodVendor: foodData,
+                  nativeGrocers: nativeGrocersData
+                }),
             selectedVendor: vendorContext
               ? {
                   vendorName: vendorContext.name,
                   ...vendorContext.data
                 }
               : null,
-              relevantCatalogProducts: retrievedCatalogProducts
+            relevantCatalogProducts: retrievedCatalogProducts
           }
-        : selectedBusinessData,
+        : {
+            businessName: selectedBusinessData.businessName,
+            businessType: selectedBusinessData.businessType,
+            websiteUrl: selectedBusinessData.websiteUrl,
+            knowledge: selectedKnowledge
+          },
 
-    crawledWebsite: crawledWebsiteData
-      ? {
-          startingUrl: crawledWebsiteData.startingUrl,
-          pages: crawledWebsiteData.pages.map((page) => ({
-            url: page.url,
-            title: page.title,
-            text: page.text,
-            products: page.products
-          }))
-        }
-      : null
+    crawledWebsite:
+      websiteId !== "lepondy-kitchen" && crawledWebsiteData
+        ? {
+            startingUrl: crawledWebsiteData.startingUrl,
+            pages: retrievedWebsitePages
+          }
+        : null
   },
   null,
   2
 );
+
+
 
 
 const systemPrompt = `
@@ -1525,15 +1650,21 @@ Rules:
 ${businessRules}
 
 Strict information rules:
-- Use only the verified business knowledge supplied below for business-specific facts.
-- Never invent prices, products, opening hours, addresses, contact details, policies, or services.
-- If the stored knowledge does not confirm an answer, clearly say that you do not have confirmed information.
-- Do not claim to accept orders, process payments, or check live availability unless connected to those systems.
-- Keep replies friendly and concise.
+- You are the official website assistant for ${selectedBusinessData.businessName}.
+- Use only the business knowledge and retrieved website information supplied below for business-specific facts.
+- Retrieved website pages are selected based on the visitor's question. They may not represent every page on the website.
+- Give priority to relevant retrieved pages when answering questions about services, solutions, industries, company information, careers, and contact details.
+- Combine information from multiple retrieved pages when necessary.
+- Never invent services, products, prices, opening hours, addresses, contact details, policies, or other business facts.
+- If the supplied information does not contain the answer, clearly say that you do not have confirmed information.
+- Do not claim to submit applications, accept orders, process payments, or perform actions unless connected to those systems.
+- Do not confuse information belonging to another website or business with this business.
+- Keep replies friendly, professional, and concise.
 
-Business knowledge (JSON):
+Business knowledge and retrieved website information (JSON):
 ${knowledgeContext}
 `.trim();
+
 
 
   try {
@@ -1723,13 +1854,61 @@ app.post("/api/crawl", async (req, res) => {
       });
     }
 
-    const origin = startUrl.origin;
-    const queue = [startUrl.href];
-    const queued = new Set(queue);
-    const visited = new Set();
-    const pages = [];
+    
+const origin = startUrl.origin;
 
-    const maxPages = 10;
+// Normalize URLs to prevent trailing-slash and hash duplicates.
+function normalizePageUrl(value) {
+  const parsed = new URL(value);
+  parsed.hash = "";
+  parsed.pathname = parsed.pathname.replace(/\/+$/, "") || "/";
+  return parsed.href;
+}
+
+const requestedUrls =
+  Array.isArray(req.body.urls) && req.body.urls.length > 0
+    ? req.body.urls
+    : [startUrl.href];
+
+const queue = [];
+const queued = new Set();
+const visited = new Set();
+const savedPageUrls = new Set();
+const pages = [];
+
+// Validate every requested URL and allow only the same website.
+for (const targetUrl of requestedUrls) {
+  try {
+    if (typeof targetUrl !== "string") continue;
+
+    const validatedTarget =
+      await validatePublicWebsiteUrl(targetUrl.trim());
+
+    if (validatedTarget.origin !== origin) continue;
+
+    const normalizedTarget =
+      normalizePageUrl(validatedTarget.href);
+
+    if (!queued.has(normalizedTarget)) {
+      queue.push(normalizedTarget);
+      queued.add(normalizedTarget);
+    }
+  } catch (error) {
+    console.log("Crawler rejected URL:", targetUrl, error.message);
+  }
+}
+
+if (queue.length === 0) {
+  return res.status(400).json({
+    success: false,
+    message: "No valid URLs were provided for crawling."
+  });
+}
+console.log("Requested URLs:", requestedUrls.length);
+console.log("Validated URLs added to queue:", queue.length);
+console.log("Initial crawl queue:", queue);
+
+    const maxPages = 20;
     const maxPageText = 20000;
     const maxQueuedUrls = 100;
     const pageTimeout = 15000;
@@ -1755,7 +1934,9 @@ app.post("/api/crawl", async (req, res) => {
     });
 
     while (queue.length > 0 && pages.length < maxPages) {
-      const currentUrl = queue.shift();
+  const currentUrl = queue.shift();
+
+  console.log("Crawling URL:", currentUrl);
       queued.delete(currentUrl);
 
       if (visited.has(currentUrl)) continue;
@@ -2047,16 +2228,25 @@ const extracted = await page.evaluate(() => {
   return { title, text, links, products, metadata };
 });
 
-        pages.push({
-          url: finalUrl.href,
-          title: extracted.title.trim(),
-          text: extracted.text.replace(/\s+/g, " ").trim()
-            .slice(0, maxPageText),
-          products: extracted.products,
-          metadata: extracted.metadata
-        });
+        
+const pageKey = normalizePageUrl(finalUrl.href);
 
-        for (const href of extracted.links) {
+if (!savedPageUrls.has(pageKey)) {
+  savedPageUrls.add(pageKey);
+
+  pages.push({
+    url: finalUrl.href,
+    title: extracted.title.trim(),
+    text: extracted.text.replace(/\s+/g, " ").trim()
+      .slice(0, maxPageText),
+    products: extracted.products,
+    metadata: extracted.metadata
+  });
+}
+
+
+        if (!Array.isArray(req.body.urls) || req.body.urls.length === 0) {
+  for (const href of extracted.links) {
           if (visited.size + queue.length >= maxQueuedUrls) break;
 
           try {
@@ -2076,7 +2266,7 @@ const extracted = await page.evaluate(() => {
               continue;
             }
 
-            const nextUrl = link.href;
+            const nextUrl = normalizePageUrl(link.href);
 
             if (!visited.has(nextUrl) && !queued.has(nextUrl)) {
               queue.push(nextUrl);
@@ -2086,6 +2276,7 @@ const extracted = await page.evaluate(() => {
             // Ignore malformed links.
           }
         }
+      }
       } catch (error) {
         console.log("Crawler skipped a page:", currentUrl, error.message);
       } finally {
@@ -2107,12 +2298,58 @@ const storageFile = path.join(
   `${safeWebsiteId}.json`
 );
 
+
+// Load existing crawled pages so they are not lost.
+let existingPages = [];
+
+if (fs.existsSync(storageFile)) {
+  try {
+    const existingData = JSON.parse(
+      fs.readFileSync(storageFile, "utf8")
+    );
+
+    if (
+      existingData.websiteId === safeWebsiteId &&
+      Array.isArray(existingData.pages)
+    ) {
+      existingPages = existingData.pages;
+    }
+  } catch (error) {
+    console.error("Could not read existing crawl data:", error.message);
+
+    return res.status(500).json({
+      success: false,
+      message: "Existing crawl data could not be read. No data was overwritten."
+    });
+  }
+}
+
+// Merge old and new pages using normalized URLs.
+// Newly crawled content replaces older content for duplicate URLs.
+const mergedPagesMap = new Map();
+
+for (const existingPage of existingPages) {
+  if (!existingPage.url) continue;
+
+  const key = normalizePageUrl(existingPage.url);
+  mergedPagesMap.set(key, existingPage);
+}
+
+for (const newPage of pages) {
+  if (!newPage.url) continue;
+
+  const key = normalizePageUrl(newPage.url);
+  mergedPagesMap.set(key, newPage);
+}
+
+const mergedPages = Array.from(mergedPagesMap.values());
+
 const crawlData = {
   websiteId: safeWebsiteId,
   startingUrl: startUrl.href,
   crawledAt: new Date().toISOString(),
-  pagesFound: pages.length,
-  pages
+  pagesFound: mergedPages.length,
+  pages: mergedPages
 };
 
 fs.writeFileSync(
@@ -2120,6 +2357,7 @@ fs.writeFileSync(
   JSON.stringify(crawlData, null, 2),
   "utf8"
 );
+
 
 return res.json({
   success: true,
